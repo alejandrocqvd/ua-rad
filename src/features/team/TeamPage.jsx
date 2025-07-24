@@ -1,6 +1,6 @@
 const TeamPage = () => {
     return (
-        <div>TeamPage</div>
+        <div>Hello world</div>
     );
 }
 
