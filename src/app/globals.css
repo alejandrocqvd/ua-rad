@@ -24,3 +24,23 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+#particles-js canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  pointer-events: auto !important;
+}
+
+
+#particles-js canvas {
+  position: absolute !important;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+  pointer-events: auto !important; /* make sure it can respond to hover */
+  z-index: 0;
+}
