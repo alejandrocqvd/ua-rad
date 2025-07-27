@@ -1,6 +1,9 @@
 "use client"
 
+import { CollapsableInfo } from "@/components/ui/CollapsableInfo";
 import { Divider } from "@/components/ui/Divider";
+import { InfoBox } from "@/components/ui/InfoBox";
+import { ProgressBar } from "@/components/ui/ProgressBar";
 import Image from "next/image";
 import { useEffect } from "react"
 
@@ -62,7 +65,7 @@ const MissionSection = () => {
     <section className="flex flex-col justify-center items-center max-w-4xl mx-10 md:mx-0">
       <div className="flex flex-col md:flex-row items-center md:items-end">
         <div className="md:flex-1 flex flex-col mb-8 md:mb-0">
-          <h2 className="mb-8 md:mb-6">OUR MISSION</h2>
+          <p className="mb-8 md:mb-6 text-left font-light text-[#007C41] text-4xl">OUR MISSION</p>
           <p className="">
             At UA-RAD, we leverage rapid prototyping and aerodynamic simulations 
             to craft cutting edge FPV drone platforms, unite students from 
@@ -116,6 +119,53 @@ const SpecialtiesSection = () => {
   );
 }
 
+const AircraftSection = () => {
+  return (
+    <section className="flex flex-col justify-center items-center max-w-4xl mx-2 md:mx-0 ">
+      <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">THE AIRCRAFT</p>
+      <div className="flex flex-col md:flex-row bg-white rounded-xl border-2 border-[#247F4A]">
+        <Image 
+          src="/home/wipAircraft.png"
+          alt="UA Rad Team Photo"
+          width={1089}
+          height={812}
+          className="h-72 w-auto bg-white relative z-20 rounded-xl border-2 border-[#247F4A] object-cover"
+        />
+        <div className="flex flex-col z-10 justify-center items-center px-10 py-12">
+          <p>Coming Soon...</p>
+          <p>
+            Our UA-RAD team is iteratively refining aerodynamic frame profiles 
+            and tuning flight control firmware for peak agility. We're building 
+            carbon fiber prototypes and testing four blade propellers for 
+            optimal thrust to weight balance, while developing a modular 
+            electronics stack for swaps and upgrades.
+          </p>
+          <div className="flex flex-row justify-between items-center">
+            <InfoBox />
+            <InfoBox />
+            <InfoBox />
+          </div>
+          <ProgressBar />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+const FAQSection = () => {
+  return (
+    <section className="flex flex-col justify-center items-center w-full gap-8 max-w-4xl my-24">
+      <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">FREQUENTLY ASKED QUESTIONS</p>
+      <CollapsableInfo />
+      <CollapsableInfo />
+      <CollapsableInfo />
+      <CollapsableInfo />
+      <CollapsableInfo />
+      <CollapsableInfo />
+    </section>
+  );
+}
+
 const HomePage = () => {
     return (
       <div className="relative flex flex-col items-center justify-center">
@@ -123,6 +173,8 @@ const HomePage = () => {
         <AboutSection />
         <MissionSection />
         <SpecialtiesSection />
+        <AircraftSection />
+        <FAQSection />
       </div>
     );
 }
