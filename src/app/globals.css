@@ -41,6 +41,19 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Roboto', sans-serif;
+  color: #464646;
+}
+
+h1 {
+  font-size: 250%;
+  color: #007C41;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 200%;
+  color: #007C41;
+  font-weight: 300;
 }
 
 
