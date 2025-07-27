@@ -38,7 +38,7 @@ const CompetitionPage = () => {
   useEffect(() => {
     // Initialize particles.js if available
     if (typeof window !== "undefined" && window.particlesJS) {
-      window.particlesJS.load("particles-js", "/assets/particlesjs-config-progress.json", () => {
+      window.particlesJS.load("particles-js", "/assets/particlesjs-config-home.json", () => {
         console.log("callback - particles.js config loaded")
       })
     }
@@ -253,9 +253,9 @@ const CompetitionPage = () => {
       </div>
 
       {/* Timeline Section */}
-            <div id="timeline" className="relative z-10  bg-white pb-40 backdrop-blur-sm">
-        <div className="container mx-auto max-w-4xl px-4">
-          <div className="mb-12 border border-2 rounded-2xl border-[#247F4A] py-8">
+            <div id="timeline" className="relative z-10  pb-40">
+        <div className="container mx-auto max-w-4xl pt-30 px-4">
+          <div className="mb-12 border border-2 bg-white  rounded-2xl border-[#247F4A] py-8">
             <div className="flex items-center justify-center mb-4">
               <div className="flex-1   mr-4" />
               <h3 className="text-3xl md:text-4xl font-light text-black whitespace-nowrap">Progress Timeline</h3>
@@ -269,37 +269,33 @@ const CompetitionPage = () => {
           {/* Vertical Timeline */}
           <div className="max-w-4xl mx-auto">
             <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-[#247F4A]"></div>
+              {/* Timeline Line - Hidden on mobile */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-[#247F4A]"></div>
 
               {timelineEvents.map((event, index) => (
                 <div
                   key={event.id}
-                  className={`relative flex items-center -mb-10 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
+                  className={`relative flex items-center mb-8 md:-mb-10 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}
                 >
-                  {/* Timeline Dot */}
+                  {/* Timeline Dot - Hidden on mobile */}
                   {event.status === 'current' || event.status === 'completed' ? (
                     <div
-                      className={`absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-[#247F4A] shadow-lg z-10 bg-[#247F4A]`}
+                      className={`hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-[#247F4A] shadow-lg z-10 bg-[#247F4A]`}
                     ></div>
                   ) : (
                     <div
-                      className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 rounded-full border-4 border-[#247F4A] shadow-lg z-10 bg-white"
+                      className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-[#247F4A] shadow-lg z-10 bg-white"
                     ></div>
                   )}
 
                   {/* Content Card */}
                   <div
-                    className={`ml-2 md:ml-0 md:w-5/12 ${index % 2 === 0 ? "md:mr-auto md:pr-2" : "md:ml-auto md:pl-2"}`}
+                    className={`w-full md:ml-0 md:w-5/12 ${index % 2 === 0 ? "md:mr-auto md:pr-2" : "md:ml-auto md:pl-2"}`}
                   >
                     <div
-                      className={`bg-white rounded-xl shadow-lg p-6 ${index % 2 === 0 ? "border-r-4" : "border-l-4"} border-[#247F4A]`}
+                      className={`bg-white rounded-xl shadow-lg p-6 border-l-4 md:${index % 2 === 0 ? "border-r-4" : "border-l-4"} border-[#247F4A]`}
                       style={{ boxShadow: `0 4px 24px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(0,0,0,0.14)` }}
                     >
-                    {/* <div
-                      className={`bg-white rounded-xl shadow-lg p-6 border-3 border-[#247F4A]`}
-                      style={{ boxShadow: `0 4px 24px 0 rgba(0,0,0,0.18), 0 1.5px 6px 0 rgba(0,0,0,0.14)` }}
-                    > */}
                       <div className="flex items-center mb-3">
                         <div
                           className={`p-2 rounded-lg mr-3 bg-[#247F4A] text-white`}

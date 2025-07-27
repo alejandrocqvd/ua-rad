@@ -21,16 +21,19 @@ const DesktopNavbar = () => {
                 <Link href={'/'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Home
                 </Link>  
-                <Link href={'/'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
+                <Link href={'/team'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Team
                 </Link>  
-                <Link href={'/'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
+                <Link href={'/competition'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Competition
                 </Link>  
-                <Link href={'/'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
-                    Outreach
+                <Link href={'/about'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
+                    About
                 </Link>  
-                <Link href={'/'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
+                <Link href={'/sponsors'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
+                    Sponsors
+                </Link>  
+                <Link href={'/contact'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Contact
                 </Link>  
             </div>
@@ -70,28 +73,35 @@ const MobileNavbar = () => {
           Home
         </Link>
         <Link
-          href="/"
+          href="/team"
           onClick={() => setOpen(false)}
           className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
         >
           Team
         </Link>
         <Link
-          href="/"
+          href="/competition"
           onClick={() => setOpen(false)}
           className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
         >
           Competition
         </Link>
         <Link
-          href="/"
+          href="/about"
           onClick={() => setOpen(false)}
           className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
         >
-          Outreach
+          About
         </Link>
         <Link
-          href="/"
+          href="/sponsors"
+          onClick={() => setOpen(false)}
+          className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
+        >
+          Sponsors
+        </Link>
+        <Link
+          href="/contact"
           onClick={() => setOpen(false)}
           className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
         >
