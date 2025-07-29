@@ -123,29 +123,28 @@ const AircraftSection = () => {
   return (
     <section className="flex flex-col justify-center items-center max-w-4xl mx-2 md:mx-0 ">
       <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">THE AIRCRAFT</p>
-      <div className="flex flex-col md:flex-row bg-white rounded-xl border-2 border-[#247F4A]">
+      <div className="flex flex-col md:flex-row bg-white rounded-xl">
         <Image 
           src="/home/wipAircraft.png"
           alt="UA Rad Team Photo"
           width={1089}
           height={812}
-          className="h-72 w-auto bg-white relative z-20 rounded-xl border-2 border-[#247F4A] object-cover"
+          className="h-auto md:h-96 w-full md:w-72 bg-white relative z-20 rounded-xl border-2 border-[#247F4A] object-contain"
         />
-        <div className="flex flex-col z-10 justify-center items-center px-10 py-12">
-          <p>Coming Soon...</p>
-          <p>
+        <div className="flex md:h-96 bg-white md:-ml-8 flex-col z-10 justify-between items-center px-10 py-10 rounded-xl border-2 border-[#247F4A]">
+          <p className="text-3xl font-bold text-left text-[#007C41] mb-8 md:ml-8">COMING SOON...</p>
+          <p className="md:ml-8 mb-8 md:mb-4 text-center md:text-left">
             Our UA-RAD team is iteratively refining aerodynamic frame profiles 
             and tuning flight control firmware for peak agility. We're building 
             carbon fiber prototypes and testing four blade propellers for 
-            optimal thrust to weight balance, while developing a modular 
-            electronics stack for swaps and upgrades.
+            optimal thrust.
           </p>
-          <div className="flex flex-row justify-between items-center">
-            <InfoBox />
-            <InfoBox />
-            <InfoBox />
+          <div className="flex flex-row w-full justify-between items-center md:px-8 mb-8 md:mb-4">
+            <InfoBox imagePath={"/home/speedIcon.png"} title={"Cruise Speed"} measurement={"??? m/s"} />
+            <InfoBox imagePath={"/home/weightIcon.png"} title={"Weight"} measurement={"??? kg"} />
+            <InfoBox imagePath={"/home/flightTimeIcon.png"} title={"Flight Time"} measurement={"??? h"} />
           </div>
-          <ProgressBar />
+          <ProgressBar progress={25} />
         </div>
       </div>
     </section>
@@ -154,14 +153,14 @@ const AircraftSection = () => {
 
 const FAQSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center w-full gap-8 max-w-4xl my-24">
+    <section className="flex flex-col justify-center items-center w-full px-2 gap-4 max-w-4xl my-24">
       <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">FREQUENTLY ASKED QUESTIONS</p>
-      <CollapsableInfo />
-      <CollapsableInfo />
-      <CollapsableInfo />
-      <CollapsableInfo />
-      <CollapsableInfo />
-      <CollapsableInfo />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
     </section>
   );
 }

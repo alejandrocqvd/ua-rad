@@ -27,9 +27,6 @@ const DesktopNavbar = () => {
                 <Link href={'/competition'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Competition
                 </Link>  
-                <Link href={'/about'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
-                    About
-                </Link>  
                 <Link href={'/sponsors'} className="h-10 flex justify-center items-center px-4 rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                     Sponsors
                 </Link>  
@@ -85,13 +82,6 @@ const MobileNavbar = () => {
           className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
         >
           Competition
-        </Link>
-        <Link
-          href="/about"
-          onClick={() => setOpen(false)}
-          className="w-full py-2 px-2 rounded-lg hover:bg-[#1F7042] transition-all duration-200 transform hover:translate-x-2"
-        >
-          About
         </Link>
         <Link
           href="/sponsors"
