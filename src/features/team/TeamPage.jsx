@@ -16,6 +16,27 @@ const executiveMembers = [
     photo: "/teampage/test2.png",
     linkedin: "https://linkedin.com/example2"
   },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
   // Add more members as needed
 ];
 
@@ -70,12 +91,33 @@ const softwareMembers = [
     photo: "/teampage/test2.png",
     linkedin: "https://linkedin.com/example2"
   },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
+  {
+    title: "Vice President",
+    name: "Jane Doe",
+    bio: "Sed do eiusmod tempor...",
+    photo: "/teampage/test2.png",
+    linkedin: "https://linkedin.com/example2"
+  },
   // Add more members as needed
 ];
 
 const TeamPage = () => {
     return (
-        <div className="w-2/3">
+        <div className="w-4/5">
             <div className="flex justify-center items-center pb-10 pt-30">
                 <div className="bg-[url('/teampage/horse.jpg')] bg-cover bg-center w-2/3 h-150 flex justify-center items-center rounded-2xl"> </div>
             </div>
@@ -91,61 +133,58 @@ const TeamPage = () => {
             </div>
             <div className="flex flex-col justify-center items-center">
                 <RoleTitle title="Executives"/>
-                <div className="justify-center items-center gap-15 grid grid-cols-1 md:grid-cols-3">
-                    <div className="flex justify-center items-center">
-                        <MemberCard 
-                        title="President"
-                        name="Guneet Dhillon" 
-                        bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.ent. quis nostrud exercitation ullamco quis nostrud exercitation ullamco quis nostrud exercitation ullamco "
-                        photo="/teampage/test.png" 
-                        linkedin="https://www.youtube.com/shorts/vnJs7ODTvNU"/> 
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <MemberCard 
-                        title="President" 
-                        name="Guneet Dhillon" 
-                        bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.ent. quis nostrud exercitation ullamco quis nostrud exercitation ullamco quis nostrud exercitation ullamco "
-                        photo="/teampage/test.png" 
-                        linkedin="https://www.youtube.com/shorts/vnJs7ODTvNU"/> 
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <MemberCard 
-                        title="President" 
-                        name="Guneet Dhillon" 
-                        bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.ent. quis nostrud exercitation ullamco quis nostrud exercitation ullamco quis nostrud exercitation ullamco "
-                        photo="/teampage/test.png" 
-                        linkedin="https://www.youtube.com/shorts/vnJs7ODTvNU"/> 
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <MemberCard 
-                        title="President" 
-                        name="Guneet Dhillon" 
-                        bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.ent. quis nostrud exercitation ullamco quis nostrud exercitation ullamco quis nostrud exercitation ullamco "
-                        photo="/teampage/test.png" 
-                        linkedin="https://www.youtube.com/shorts/vnJs7ODTvNU"/> 
-                    </div>
-                    <div className="flex justify-center items-center">
-                        <MemberCard 
-                        title="President" 
-                        name="Guneet Dhillon" 
-                        bio="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.ent. quis nostrud exercitation ullamco quis nostrud exercitation ullamco quis nostrud exercitation ullamco "
-                        photo="/teampage/test.png" 
-                        linkedin="https://www.youtube.com/shorts/vnJs7ODTvNU"/> 
-                    </div>
+                <div className="w-full max-w-6xl"> 
+                  <div
+                    className={`grid gap-8 p-4 ${
+                      executiveMembers.length <= 2
+                        ? "grid-cols-1 justify-items-center md:grid-cols-2" // Center if 1 or 2 cards
+                        : "grid-cols-1 md:grid-cols-3" // Default 3-column grid
+                    }`}
+                  >
+                    {executiveMembers.map((member, index) => (
+                      <div key={index} className="flex justify-center">
+                        <MemberCard {...member} />
+                      </div>
+                    ))}
+                  </div>
                 </div>
             </div>
-            <div>
-                {/* <RoleTitle title="Mechanical"/>
-                <MemberCard />  */}
+            <div className="flex flex-col justify-center items-center">
+                <RoleTitle title="Mechanical"/>
+                <div className="w-full max-w-6xl"> 
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                    {mechanicalMembers.map((member, index) => (
+                      <div key={index}> 
+                        <MemberCard {...member} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
             </div>
-            {/* <div>
+            <div className="flex flex-col justify-center items-center">
                 <RoleTitle title="Electrical"/>
-                <MemberCard /> 
+                <div className="w-full max-w-6xl"> 
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                    {electricalMembers.map((member, index) => (
+                      <div key={index}> 
+                        <MemberCard {...member} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
             </div>
-            <div>
+            <div className="flex flex-col justify-center items-center">
                 <RoleTitle title="Software"/>
-                <MemberCard /> 
-            </div> */}
+                <div className="w-full max-w-6xl"> 
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                    {softwareMembers.map((member, index) => (
+                      <div key={index}> 
+                        <MemberCard {...member} />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+            </div>
         </div>
         
         
