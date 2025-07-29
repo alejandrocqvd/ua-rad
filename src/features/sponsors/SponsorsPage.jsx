@@ -1,12 +1,14 @@
+import Footer from '@/components/common/Footer';
+
 const SponsorsPage = () => {
     return (
         <div className="relative min-h-screen w-full overflow-hidden bg-white ">
 
-            <div className="relative pb-20 z-10 min-h-screen flex flex-col">
-                <h1 className="text-center text-4xl md:text-6xl lg:text-6xl font-light text-black mb-4 leading-tight mt-32"> Sponsorship Program </h1>
+            <div className="relative pb-20  z-10 min-h-screen flex flex-col">
+                <h1 className="text-center text-4xl md:text-6xl lg:text-6xl font-light text-black mb-2 leading-tight  mt-26 md:mt-32 lg:mt-32"> Sponsorship Program </h1>
 
                 {/* Sponsorship Tier Details */}
-                <div className="container mx-auto px-4 mt-8">
+                <div className="container mx-auto px-4 mt-4 md:mt-8 lg:mt-8">
                     <div className="max-w-6xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
                             {/* Bronze Tier */}
@@ -105,6 +107,18 @@ const SponsorsPage = () => {
                                         />
                                         <h4 className="font-semibold text-black mb-3 text-lg">Company Name</h4>
                                         <p className="text-sm text-gray-600 leading-relaxed">
+                                            A leading aerospace engineering company specializing in drone technology and autonomous systems. 
+                                            Committed to advancing student innovation and engineering education.
+                                        </p>
+                                    </div>
+                                    <div className="text-center">
+                                        <img 
+                                            src="/branding/UARAD_LOGO_DARK.png" 
+                                            alt="Company Logo" 
+                                            className="w-32 h-32 mx-auto mb-4 object-contain"
+                                        />
+                                        <h4 className="font-semibold text-black mb-3 text-lg">Company Name</h4>
+                                        <p className="text-sm text-gray-600 leading-relaxed">
                                             Global technology leader in robotics and automation solutions. 
                                             Supporting the next generation of engineering talent through strategic partnerships.
                                         </p>
@@ -114,7 +128,7 @@ const SponsorsPage = () => {
 
                             {/* Silver Sponsors */}
                             <div className="mb-12">
-                                <div className="flex items-center justify-center mb-6">
+                                <div className="flex items-center pt-10 justify-center mb-6">
                                     <h3 className="text-2xl font-bold text-gray-600 whitespace-nowrap">SILVER SPONSORS</h3>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -160,7 +174,7 @@ const SponsorsPage = () => {
 
                             {/* Bronze Sponsors */}
                             <div>
-                                <div className="flex items-center justify-center mb-6">
+                                <div className="flex items-center pt-10 justify-center mb-6">
                                     <h3 className="text-2xl font-bold text-amber-700 whitespace-nowrap">BRONZE SPONSORS</h3>
                                 </div>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -213,18 +227,26 @@ const SponsorsPage = () => {
                             </div>
 
                             {/* Call to Action */}
-                            <div className="text-center mt-12 pt-8 border-t border-gray-200">
-                                <p className="text-lg text-black mb-4">Interested in becoming a sponsor?</p>
-                                <button className="bg-[#247F4A] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#1a5f3a] transition-colors">
-                                    Contact Us
-                                </button>
+                            <div className="text-center mt-12 pt-8 ">
+                                <div className="bg-white border-2 border-[#247F4A] p-8 rounded-lg">
+                                    <p className="text-lg text-black mb-8 leading-relaxed max-w-4xl mx-auto">
+                                        Supporting UA‑RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAV design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UAVs, at national competitions, and across our digital platforms, reaching thousands of students and professionals annually. We welcome both in-kind contributions and financial support, with custom partnerships available.
+                                    </p>
+                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                        <a href="mailto:UARAD@gmail.ca?subject=Sponsorship Inquiry" className="inline-block bg-[#247F4A] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#1a5f3a] transition-colors">
+                                            Support Us Today
+                                        </a>
+                                        <a href="/sponsors/contact" className="inline-block bg-white text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-lg font-semibold hover:bg-[#247F4A] hover:text-white transition-colors">
+                                            Contact Us
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
+                <Footer />
             </div>
-
         </div>
     );
 }
