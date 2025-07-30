@@ -62,7 +62,7 @@ const AboutSection = () => {
 
 const MissionSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center max-w-4xl mx-10 md:mx-0">
+    <section className="flex flex-col justify-center items-center max-w-4xl mx-10 mt-12 md:mt-0 md:mx-0">
       <div className="flex flex-col md:flex-row items-center md:items-end">
         <div className="md:flex-1 flex flex-col mb-8 md:mb-0">
           <p className="mb-8 md:mb-6 text-left font-light text-[#007C41] text-4xl">OUR MISSION</p>
@@ -122,14 +122,14 @@ const SpecialtiesSection = () => {
 const AircraftSection = () => {
   return (
     <section className="flex flex-col justify-center items-center max-w-4xl mx-2 md:mx-0 ">
-      <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">THE AIRCRAFT</p>
+      <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full mt-16 md:mt-0">THE AIRCRAFT</p>
       <div className="flex flex-col md:flex-row bg-white rounded-xl">
         <Image 
           src="/home/wipAircraft.png"
           alt="UA Rad Team Photo"
           width={1089}
           height={812}
-          className="h-auto md:h-96 w-full md:w-72 bg-white relative z-20 rounded-xl border-2 border-[#247F4A] object-contain"
+          className="h-44 mb-2 md:mb-0 md:h-96 w-full md:w-72 bg-white relative z-20 rounded-xl border-2 border-[#247F4A] object-contain"
         />
         <div className="flex md:h-96 bg-white md:-ml-8 flex-col z-10 justify-between items-center px-10 py-10 rounded-xl border-2 border-[#247F4A]">
           <p className="text-3xl font-bold text-left text-[#007C41] mb-8 md:ml-8">COMING SOON...</p>
