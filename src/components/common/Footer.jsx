@@ -32,7 +32,7 @@ const Footer = () => {
                     />
                 </Link>
             </div>
-            <hr className="border-1 md:border-2  w-full rounded-full my-12"></hr>
+            <hr className="border-1 w-full rounded-full my-12"></hr>
             <div className="flex flex-col-reverse md:flex-row justify-center items-start">
                 <div className="flex flex-col justify-center items-center md:items-start flex-1">
                     <p className="text-2xl font-semibold mb-2">UA-RAD</p>
