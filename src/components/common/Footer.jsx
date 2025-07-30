@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col justify-center items-center max-w-5xl mx-2 md:mx-auto bg-[#247F4A] rounded-xl py-12 md:py-16 px-8 md:px-12 mb-2 md:mb-12 text-white">
+        <footer className="flex flex-col justify-center items-center max-w-5xl mx-2 shadow-md md:mx-auto bg-[#247F4A] rounded-xl py-12 md:py-16 px-8 md:px-12 mb-2 md:mb-12 text-white">
             <div className="flex flex-col md:flex-row justify-between items-center w-full">
                 <Link href={'/'} className="flex md:hidden">
                     <Image

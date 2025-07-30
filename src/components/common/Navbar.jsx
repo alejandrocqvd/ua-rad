@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const DesktopNavbar = () => {
     return (
-        <nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 flex-row justify-between items-center rounded-[16px] p-2 bg-[#247F4A] max-w-5xl h-14 mt-8 mx-auto text-sm">
+        <nav className="hidden md:flex fixed top-0 left-0 right-0 z-50 flex-row justify-between items-center rounded-[16px] p-2 bg-[#247F4A] max-w-5xl h-14 mt-2 shadow-lg mx-auto text-sm">
             <Link href={'/'} className="h-10 flex justify-center items-center rounded-xl cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1F7042] hover:scale-105">
                 <Image
                     src="/branding/UARAD_LOGO_LIGHT.svg"

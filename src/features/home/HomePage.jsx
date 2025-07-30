@@ -155,7 +155,10 @@ const FAQSection = () => {
   return (
     <section className="flex flex-col justify-center items-center w-full px-2 gap-4 max-w-4xl my-24">
       <p className="mb-8 md:mb-6 text-center md:text-left font-light text-[#007C41] text-4xl w-full">FREQUENTLY ASKED QUESTIONS</p>
-      <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
+      <CollapsableInfo
+        question="What is UA-RAD?"
+        answer="UA-RAD is an innovative organization focused on the future of aerial racing drones in Canada. We're dedicated to shaping tomorrow's FPV drone racing competitions and fostering a community of drone enthusiasts."
+      />
       <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
       <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
       <CollapsableInfo question={"test"} answer={"XD\n\n\n\n\n"}  />
