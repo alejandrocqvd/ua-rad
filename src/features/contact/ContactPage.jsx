@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const ContactHeroSection = () => {
   return (
@@ -256,8 +256,17 @@ const JoinUsSection = () => {
 }
 
 const ContactPage = () => {
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.particlesJS) {
+      window.particlesJS.load("particles-js", "/assets/particlesjs-config-home.json", () => {
+        console.log("callback - particles.js config loaded")
+      })
+    }
+  }, [])
+
   return (
     <div className="relative flex flex-col items-center justify-center">
+    <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0"></div>
       <ContactHeroSection />
       {/* <ContactFormSection /> */}
       <ContactInfoSection />
