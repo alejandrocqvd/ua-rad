@@ -5,7 +5,7 @@ import { useState, useEffect } from "react"
 
 const ContactHeroSection = () => {
   return (
-    <section className="flex flex-col justify-center items-center h-auto mt-32 mb-12 w-[98vw] bg-gradient-to-b from-gray-50 to-white overflow-x-hidden">
+    <section className="flex flex-col justify-center items-center h-auto mt-32 mb-12 w-[98vw] overflow-x-hidden">
       <p className="text-xl md:text-5xl font-light text-[#007C41] mb-4">GET IN TOUCH</p>
       <Image
         src="/branding/UARAD_LOGO_DARK.svg"
