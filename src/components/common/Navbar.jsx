@@ -45,7 +45,7 @@ const MobileNavbar = () => {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="flex md:hidden fixed top-0 left-0 right-0 z-50 bg-[#247F4A] p-4 justify-between items-center rounded-xl mt-2 mx-2">
+    <nav className="flex md:hidden fixed top-0 left-0 right-0 z-50 shadow-md bg-[#247F4A] p-4 justify-between items-center rounded-xl mt-2 mx-2">
       <Link href="/">
         <Image src="/branding/UARAD_LOGO_LIGHT.svg" alt="UARAD Logo" width={150} height={50} className="h-6 w-auto" />
       </Link>

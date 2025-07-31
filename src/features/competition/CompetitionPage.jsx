@@ -187,10 +187,10 @@ const CompetitionPage = () => {
         <div className="container mx-auto px-4">
           {/* Title */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl lg:text-6xl font-light text-black mb-4 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-6xl font-light mb-4 leading-tight">
               Aerial Evolution Association
             </h1>
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light text-black mb-2">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-light  mb-2">
               Canadian Competition
             </h2>
             {/* <p className="text-xl md:text-2xl text-gray-600 font-medium">
@@ -200,33 +200,33 @@ const CompetitionPage = () => {
 
           {/* Countdown Timer */}
           <div className="flex justify-center mb-16">
-            <div className="bg-white/90 backdrop-blur-sm border-2 border-black rounded-2xl shadow-2xl p-6 md:p-8">
+            <div className="bg-white/90 backdrop-blur-sm border-2 border-[#247F4A] rounded-2xl shadow-2xl p-6 md:p-8">
               <div className="flex flex-wrap justify-center gap-4 md:gap-8">
                 <div className="text-center min-w-[100px]">
-                  <div className="text-4xl md:text-6xl lg:text-7xl text-black mb-2">
+                  <div className="text-4xl md:text-6xl lg:text-7xl mb-2">
                     {timeLeft.days.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm md:text-base text-black uppercase tracking-wider">Days</div>
+                  <div className="text-sm md:text-base uppercase tracking-wider">Days</div>
                 </div>
                 {/* Divider */}
                 <div className="hidden md:flex items-center">
                   <div className="h-24 w-px bg-[#247F4A] mx-2" />
                 </div>
                 <div className="text-center min-w-[100px]">
-                  <div className="text-4xl md:text-6xl lg:text-7xl text-black mb-2">
+                  <div className="text-4xl md:text-6xl lg:text-7xl mb-2">
                     {timeLeft.hours.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm md:text-base text-black uppercase tracking-wider">Hours</div>
+                  <div className="text-sm md:text-base uppercase tracking-wider">Hours</div>
                 </div>
                 {/* Divider */}
                 <div className="hidden md:flex items-center">
                   <div className="h-24 w-px bg-[#247F4A] mx-2" />
                 </div>
                 <div className="text-center min-w-[100px]">
-                  <div className="text-4xl md:text-6xl lg:text-7xl text-black mb-2">
+                  <div className="text-4xl md:text-6xl lg:text-7xl mb-2">
                     {timeLeft.minutes.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm md:text-base text-black uppercase tracking-wider">
+                  <div className="text-sm md:text-base uppercase tracking-wider">
                     Minutes
                   </div>
                 </div>
@@ -238,7 +238,7 @@ const CompetitionPage = () => {
                   <div className="text-4xl md:text-6xl lg:text-7xl text-[#247F4A] mb-2">
                     {timeLeft.seconds.toString().padStart(2, "0")}
                   </div>
-                  <div className="text-sm md:text-base text-black uppercase tracking-wider">
+                  <div className="text-sm md:text-base uppercase tracking-wider">
                     Seconds
                   </div>
                 </div>
@@ -247,21 +247,21 @@ const CompetitionPage = () => {
           </div>
         </div>
         {/* Scroll Down Arrow */}
-        <a href="#timeline" className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-black hover:text-[#247F4A] transition" aria-label="Scroll to timeline">
+        <a href="#timeline" className="absolute bottom-8 left-1/2 transform -translate-x-1/2  hover:text-[#247F4A] transition" aria-label="Scroll to timeline">
           <ChevronDown className="w-20 h-20 animate-bounce" />
         </a>
       </div>
 
       {/* Timeline Section */}
-            <div id="timeline" className="relative z-10  pb-40">
+      <div id="timeline" className="relative z-10  pb-40">
         <div className="container mx-auto max-w-4xl pt-30 px-4">
-          <div className="mb-12 border border-2 bg-white  rounded-2xl border-[#247F4A] py-8">
+          <div className="mb-12 border-2 bg-white  rounded-2xl border-[#247F4A] py-8">
             <div className="flex items-center justify-center mb-4">
               <div className="flex-1   mr-4" />
-              <h3 className="text-3xl md:text-4xl font-light text-black whitespace-nowrap">Progress Timeline</h3>
+              <h3 className="text-3xl md:text-4xl mb-2 font-light whitespace-nowrap text-[#247F4A]">PROGRESS TIMELINE</h3>
               <div className="flex-1  ml-4" />
             </div>
-            <p className="text-lg text-black max-w-2xl mx-auto text-center">
+            <p className=" max-w-2xl px-4 md:px-0 mx-auto text-center">
             Here at UA-RAD, we are tackling the full-stack challenge of drone development, creating all of the mechanical, electrical, and autonomous software components for the 2026 Aerial Evolution Student Competition. Track our progress through each major milestone.
             </p>
           </div>
@@ -303,16 +303,16 @@ const CompetitionPage = () => {
                           {event.icon}
                         </div>
                         <div>
-                          <h4 className=" flex items-center text-lg   text-black">
+                          <h4 className=" flex items-center text-lg   ">
                             
                           <Clock className="w-4 h-4 mr-1" />
                           {event.title}</h4>
-                          <div className="flex items-center font-semi  text-sm text-black">
+                          <div className="flex items-center font-semi  text-sm ">
                             {event.subTitle}
                           </div>
                         </div>
                       </div>
-                      <p className="text-black leading-relaxed">{event.description}</p>
+                      <p className=" leading-relaxed">{event.description}</p>
                       {event.status === "current" && (
                         <div className="mt-3 inline-flex items-center px-3 py-1 rounded-full text-xs bg-[#247F4A] text-white">
                           <div className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></div>
