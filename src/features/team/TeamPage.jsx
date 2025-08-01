@@ -1,184 +1,102 @@
+"use client"
+
 import MemberCard from "../../components/MemberCard";
 import RoleTitle from "../../components/RoleTitle";
-
-const executiveMembers = [
-  {
-    title: "President",
-    name: "Guneet Dhillon",
-    bio: "Lorem ipsum dolor sit amet...",
-    photo: "/teampage/test.png",
-    linkedin: "https://linkedin.com/example1"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  // Add more members as needed
-];
-
-const mechanicalMembers = [
-  {
-    title: "President",
-    name: "Guneet Dhillon",
-    bio: "Lorem ipsum dolor sit amet...",
-    photo: "/teampage/test.png",
-    linkedin: "https://linkedin.com/example1"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  // Add more members as needed
-];
-
-const electricalMembers = [
-  {
-    title: "President",
-    name: "Guneet Dhillon",
-    bio: "Lorem ipsum dolor sit amet...",
-    photo: "/teampage/test.png",
-    linkedin: "https://linkedin.com/example1"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  // Add more members as needed
-];
-
-const softwareMembers = [
-  {
-    title: "President",
-    name: "Guneet Dhillon",
-    bio: "Lorem ipsum dolor sit amet...",
-    photo: "/teampage/test.png",
-    linkedin: "https://linkedin.com/example1"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  {
-    title: "Vice President",
-    name: "Jane Doe",
-    bio: "Sed do eiusmod tempor...",
-    photo: "/teampage/test2.png",
-    linkedin: "https://linkedin.com/example2"
-  },
-  // Add more members as needed
-];
+import {executiveMembers, mechanicalMembers, electricalMembers, softwareMembers} from "../../components/Members";
+import { useEffect, React} from "react"
 
 const TeamPage = () => {
+    useEffect(() => {
+      // Initialize particles.js if available
+      if (typeof window !== "undefined" && window.particlesJS) {
+        window.particlesJS.load("particles-js", "/assets/particlesjs-config-home.json", () => {
+          console.log("callback - particles.js config loaded");
+        });
+      }
+
+      // Cleanup function
+      return () => {
+        if (typeof window !== "undefined" && window.pJSDom && window.pJSDom.length > 0) {
+          window.pJSDom[0].pJS.fn.vendors.destroypJS();
+          window.pJSDom = [];
+        }
+      };
+    }, []);
+
     return (
-        <div className="w-4/5">
-            <div className="flex justify-center items-center pb-10 pt-30">
-                <div className="bg-[url('/teampage/horse.jpg')] bg-cover bg-center w-2/3 h-150 flex justify-center items-center rounded-2xl"> </div>
+        <div className="relative min-h-screen w-full overflow-hidden bg-white">
+          <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0"></div>
+            <div className="flex justify-center items-center pb-10 pt-30 relative z-10 h-screen">
+                <div className="bg-[url('/teampage/horse.jpg')] bg-cover bg-center w-full max-w-6xl h-150 flex justify-center items-center rounded-2xl"> </div>
             </div>
-            <div className="flex justify-center items-center mt-10">
-                <div className="bg-[#247F4A] w-2/3 flex flex-col justify-center items-center">
+            <div className="flex justify-center items-center mt-10 relative z-10">
+                <div className="bg-white border-5 border-[#247F4A] w-2/3 flex flex-col justify-center items-center rounded-2xl">
                     <div className="h-20 content-normal text-4xl mt-5">
                         Meet The UA-RAD 2025 Team
                     </div>
                     <div className="text-center text-xl mx-8 mb-5">
-                        A multidisciplinary team of innovators merging mechanical, electrical, and software expertise to pioneer the future of robotics at the University of Alberta.                    
+                        A multidisciplinary team of innovators merging mechanical, electrical, and software expertise to pioneer the future of FPV drones platforms at the University of Alberta.                    
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
-                <RoleTitle title="Executives"/>
-                <div className="w-full max-w-6xl"> 
-                  <div
-                    className={`grid gap-8 p-4 ${
-                      executiveMembers.length <= 2
-                        ? "grid-cols-1 justify-items-center md:grid-cols-2" // Center if 1 or 2 cards
-                        : "grid-cols-1 md:grid-cols-3" // Default 3-column grid
-                    }`}
-                  >
-                    {executiveMembers.map((member, index) => (
-                      <div key={index} className="flex justify-center">
-                        <MemberCard {...member} />
-                      </div>
-                    ))}
-                  </div>
+            <div className="flex flex-col justify-center items-center mb-14">
+              <RoleTitle title="Executives"/>
+              <div className="w-full max-w-6xl">
+                <div className={`flex flex-wrap justify-center gap-8 px-4`}>
+                  {executiveMembers.map((member, index) => (
+                    <div key={index} className={`flex justify-center py-6 ${
+                        executiveMembers.length >= 3 ? "w-full md:w-[calc(33.333%-22px)]": 
+                        executiveMembers.length === 2 ? "w-full md:w-[calc(50%-16px)]": "w-full md:w-auto" 
+                      }`}
+                    >
+                      <MemberCard {...member} />
+                    </div>
+                  ))}
                 </div>
+              </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center mb-14">
                 <RoleTitle title="Mechanical"/>
                 <div className="w-full max-w-6xl"> 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                  <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {mechanicalMembers.map((member, index) => (
-                      <div key={index}> 
+                      <div key={index} className={`flex justify-center py-6 ${
+                          mechanicalMembers.length >= 3 ? "w-full md:w-[calc(33.333%-22px)]": 
+                          mechanicalMembers.length === 2 ? "w-full md:w-[calc(50%-16px)]": "w-full md:w-auto" 
+                        }`}
+                      >
                         <MemberCard {...member} />
                       </div>
                     ))}
                   </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center mb-14">
                 <RoleTitle title="Electrical"/>
                 <div className="w-full max-w-6xl"> 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                  <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {electricalMembers.map((member, index) => (
-                      <div key={index}> 
+                      <div key={index} className={`flex justify-center py-6 ${
+                          electricalMembers.length >= 3 ? "w-full md:w-[calc(33.333%-22px)]": 
+                          electricalMembers.length === 2 ? "w-full md:w-[calc(50%-16px)]": "w-full md:w-auto" 
+                        }`}
+                      >
                         <MemberCard {...member} />
                       </div>
                     ))}
                   </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col justify-center items-center mb-14">
                 <RoleTitle title="Software"/>
                 <div className="w-full max-w-6xl"> 
-                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center p-4">
+                  <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {softwareMembers.map((member, index) => (
-                      <div key={index}> 
+                      <div key={index} className={`flex justify-center py-6 ${
+                          softwareMembers.length >= 3 ? "w-full md:w-[calc(33.333%-22px)]": 
+                          softwareMembers.length === 2 ? "w-full md:w-[calc(50%-16px)]": "w-full md:w-auto" 
+                        }`}
+                      >
                         <MemberCard {...member} />
                       </div>
                     ))}
