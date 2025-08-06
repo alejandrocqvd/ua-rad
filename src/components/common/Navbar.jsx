@@ -34,9 +34,27 @@ const DesktopNavbar = () => {
                     Contact
                 </Link>  
             </div>
-            <div className="bg-white rounded-[12px] p-4 text-[#247F4A] font-bold h-10 flex justify-center items-center cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 active:scale-95">
+            <a 
+              href={`mailto:uarad@gmail.com?subject=${encodeURIComponent(
+                'Sponsorship Inquiry - UA-RAD'
+              )}&body=${encodeURIComponent(
+                `Hello UA-RAD team,
+
+            We are interested in exploring sponsorship opportunities with your team. Please find our details below:
+
+            Company Name:
+            Contact Person:
+            Position/Role:
+            Sponsorship Interest (monetary, equipment, mentorship, etc.):
+
+            [Your message here...]
+
+            Best regards,
+            [Your Name]`
+              )}`}
+              className="bg-white rounded-[12px] p-4 text-[#247F4A] font-bold h-10 flex justify-center items-center cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 active:scale-95">
                 Sponsor Us
-            </div>
+            </a>
         </nav>
     );
 }

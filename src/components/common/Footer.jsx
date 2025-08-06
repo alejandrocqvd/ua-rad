@@ -58,25 +58,25 @@ const Footer = () => {
                         Home
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"/team"}
                         className="w-24 text-center md:text-left mb-4 transition-all duration-300 ease-in-out hover:translate-x-2 hover:text-[#D3AF37]"
                     >
                         Team
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"/competition"}
                         className="w-24 text-center md:text-left mb-4 transition-all duration-300 ease-in-out hover:translate-x-2 hover:text-[#D3AF37]"
                     >
                         Competition
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"/sponsors"}
                         className="w-24 text-center md:text-left mb-4 transition-all duration-300 ease-in-out hover:translate-x-2 hover:text-[#D3AF37]"
                     >
                         Sponsors
                     </Link>
                     <Link
-                        href={"/"}
+                        href={"/contact"}
                         className="w-24 text-center md:text-left transition-all duration-300 ease-in-out hover:translate-x-2 hover:text-[#D3AF37]"
                     >
                         Contact

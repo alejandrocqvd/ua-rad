@@ -240,13 +240,31 @@ const SponsorsPage = () => {
                             <div className="text-center mt-12 pt-8 ">
                                 <div className=" p-8 rounded-xl">
                                     <p className="text-lg  mb-8 leading-relaxed max-w-4xl mx-auto">
-                                        Supporting UA‑RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAV design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UAVs, at national competitions, and across our digital platforms, reaching thousands of students and professionals annually. We welcome both in-kind contributions and financial support, with custom partnerships available.
+                                        Supporting UA-RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAV design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UAVs, at national competitions, and across our digital platforms, reaching thousands of students and professionals annually. We welcome both in-kind contributions and financial support, with custom partnerships available.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <a href="mailto:UARAD@gmail.ca?subject=Sponsorship Inquiry" className="inline-block bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20">
+                                        <a 
+                                            href={`mailto:uarad@gmail.com?subject=${encodeURIComponent(
+                                                'Sponsorship Inquiry - UA-RAD'
+                                            )}&body=${encodeURIComponent(
+                                                `Hello UA-RAD team,
+
+                                            We are interested in exploring sponsorship opportunities with your team. Please find our details below:
+
+                                            Company Name:
+                                            Contact Person:
+                                            Position/Role:
+                                            Sponsorship Interest (monetary, equipment, mentorship, etc.):
+
+                                            [Your message here...]
+
+                                            Best regards,
+                                            [Your Name]`
+                                            )}`}
+                                            className="inline-block bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20">
                                             Support Us Today
                                         </a>
-                                        <a href="/sponsors/contact" className="inline-block bg-white text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205">
+                                        <a href="/contact" className="inline-block bg-white text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205">
                                             Contact Us
                                         </a>
                                     </div>
