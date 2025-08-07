@@ -84,10 +84,10 @@ export const softwareMembers = [
         linkedin: "https://www.linkedin.com/in/radhe04/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
     {
-        name: "Tegen  Readman",
+        name: "Tegen Readman",
         title: "Software Team",
-        subtitle: "",
-        bio: "Sed do eiusmod tempor...",
+        subtitle: "4th-year Computer Science",
+        bio: "Tegen joined UARAD in 2025 as part of the Software Team, focusing on flight software & autonomy. Graduating in 2026 with a Computer Science degree and Economics minor, he brings experience as a CMPUT 201 Teaching Assistant and property assessment work. His goal is to help build a cool drone while hanging out with friends.",
         photo: "/teampage/memberphotos/tegenhilkerreadman.png",
         linkedin: "https://www.linkedin.com/in/tegen-hilker-readman/"
     },

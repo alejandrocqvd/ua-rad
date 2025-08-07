@@ -25,7 +25,7 @@ export function MemberCard({title, name, bio, photo, linkedin, subtitle}) {
                     <div className="flex justify-center h-10  items-center text-gray-700 text-lg italic">
                         {title}
                     </div>
-                    <div className="flex justify-center h-10 mb-5 mt-1 items-center text-2xl text-gray-700">
+                    <div className="flex justify-center h-10 pb-2 mb-5 mt-1 items-center text-2xl text-gray-700">
                         
                             {name}
                     
