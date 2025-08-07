@@ -49,10 +49,10 @@ const AboutSection = () => {
         <p className="hidden md:flex absolute -top-16 text-left font-light text-[#007C41] text-4xl">WHO WE ARE</p>
         <p className="flex md:hidden text-left font-light text-[#007C41] text-3xl mb-8">WHO WE ARE</p>
         <p className="text-left">
-          UA RAD is a student led engineering club at the University of 
+          UA-RAD is a student led engineering club at the University of 
           Alberta dedicated to pushing the limits of FPV (First-Person View) 
-          drone technology. We design, build, and race custom high 
-          performance drones—ultimately qualifying for the 
+          drone technology. We design, build, and fly custom high 
+          performance drones. Ultimately competing in the 
           Evolution Association Canada 2025 Competition.
         </p>
       </div>
@@ -94,7 +94,8 @@ const SpecialtiesSection = () => {
         <p className="text-left">
           <span className="font-bold">National Recognition. </span> 
           UA-RAD proudly represents the University of Alberta on a 
-          national stage, competing alongside top teams in Canada's FPV racing scene.
+          national stage, competing alongside top teams in Canada's FPV drone 
+          competition scene.
         </p>
         <Divider />
         <p className="text-left">
@@ -106,7 +107,7 @@ const SpecialtiesSection = () => {
         <p className="text-left">
           <span className="font-bold">Team-Driven Projects. </span> 
           With members from multiple faculties, we work together on creative 
-          drone solutions for challenges in research, education, and beyond.
+          drone solutions for challenges faced in any drone competition.
         </p>
       </div>
       <Image 
@@ -146,8 +147,8 @@ const AircraftSection = () => {
             <InfoBox imagePath={"/home/weightIcon.png"} title={"Weight"} measurement={"TBD"} />
             <InfoBox imagePath={"/home/flightTimeIcon.png"} title={"Flight Time"} measurement={"TBD"} />
           </div>
-          <p className="flex md:hidden mb-4 font-bold text-[#247F4A]">Progress:</p>
-          <ProgressBar progress={25} />
+          <p className="mb-4 font-bold text-[#247F4A]">Progress:</p>
+          <ProgressBar progress={10} />
         </div>
       </div>
     </section>
@@ -161,7 +162,7 @@ const FAQSection = () => {
       <CollapsableInfo question={"How can I get involved?"} answer={"You can get involved by reaching out to us through our contact page. We're always looking for motivated students who want to learn and contribute."}  />
       <CollapsableInfo question={"Do I need experience to join?"} answer={"No experience is required! We welcome students from all backgrounds and skill levels. Whether you're into engineering, coding, design, or just curious about drones, there's a place for you on the team."}  />
       <CollapsableInfo question={"What skills can I learn by joining UA-RAD?"} answer={"By joining UA-RAD, you can develop hands-on experience in areas like drone assembly, soldering, 3D printing, flight tuning, and FPV piloting. You'll also gain teamwork, problem-solving, and project management skills by working on real builds with other students."}  />
-      <CollapsableInfo question={"What kind of drones do you build?"} answer={"We focus on high-speed FPV (First Person View) racing drones designed for agility and performance. Our builds typically include carbon fiber frames, flight controllers, and video transmission systems for immersive piloting."}  />
+      <CollapsableInfo question={"What kind of drones do you build?"} answer={"We focus on FPV (First Person View) specialized drones designed for agility and performance. Our builds typically include carbon fiber frames, flight controllers, and video transmission systems for immersive piloting."}  />
       <CollapsableInfo question={"What competitions do you attend?"} answer={"We compete in events like the Aerial Evolution Association of Canada's FPV Racing Series and other drone-focused challenges. Competitions help us test our designs and push our skills to the next level."}  />
     </section>
   );

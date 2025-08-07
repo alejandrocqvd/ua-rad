@@ -15,7 +15,7 @@ const SponsorsPage = () => {
         <div className="relative min-h-screen w-full overflow-hidden bg-white ">
             <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0"></div>
             <div className="relative pb-20  z-10 min-h-screen flex flex-col">
-                <h1 className="text-center text-4xl md:text-6xl lg:text-6xl font-light  mb-10 leading-tight  mt-26 md:mt-40"> Sponsorship Program </h1>
+                <h1 className="text-center text-4xl md:text-5xl font-light  mb-10 leading-tight  mt-26 md:mt-40"> Sponsorship Program </h1>
 
                 {/* Sponsorship Tier Details */}
                 <div className="container mx-auto px-4 mt-4 md:mt-8 lg:mt-8 bg-white border-[#247F4A] border-2 rounded-xl max-w-6xl">
@@ -37,7 +37,7 @@ const SponsorsPage = () => {
                             </div>
 
                             {/* Vertical Separator 1 */}
-                            <div className="hidden md:block absolute left-1/3 top-10 bottom-10 w-[2px] bg-[#247F4A] rounded-xl"></div>
+                            <div className="hidden md:block absolute left-1/3 top-10 bottom-10 w-[2px] bg-[#247F4A]"></div>
 
                             {/* Silver Tier */}
                             <div className="bg-white border-[#247F4A] p-8 text-center">
@@ -82,7 +82,7 @@ const SponsorsPage = () => {
 
                 {/* Current Sponsors Section */}
                 <div className="container mx-auto px-0 md:px-4 mt-16">
-                    <div className="max-w-6xl mx-auto">
+                    <div className="max-w-5xl mx-auto">
                         <div className="  p-8">
                             <div className="flex items-center justify-center mb-12">
                                 <div className="flex-1 border-1 border-[#247F4A] mr-4"></div>
@@ -93,12 +93,11 @@ const SponsorsPage = () => {
                             {/* Gold Sponsors */}
                             <div className="mb-12">
                                 <div className="flex items-center justify-center mb-6">
-                                    <h3 className="text-2xl font-bold text-yellow-600 whitespace-nowrap">GOLD SPONSORS</h3>
+                                    {/* <h3 className="text-2xl font-bold text-yellow-600 whitespace-nowrap">GOLD SPONSORS</h3> */}
                                 </div>
                                 <div className=" bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {/* Example Gold Sponsor - Replace with actual sponsors */}
                                     <div className="text-center">
-                                        <img 
+                                        {/* <img 
                                             src="/branding/UARAD_LOGO_DARK.png" 
                                             alt="Company Logo" 
                                             className="w-32 h-32 mx-auto mb-4 object-contain"
@@ -107,7 +106,7 @@ const SponsorsPage = () => {
                                         <p className="text-sm text-gray-600 leading-relaxed">
                                             A leading aerospace engineering company specializing in drone technology and autonomous systems. 
                                             Committed to advancing student innovation and engineering education.
-                                        </p>
+                                        </p> */}
                                     </div>
                                     <div className="text-center">
                                         <img 
@@ -115,14 +114,14 @@ const SponsorsPage = () => {
                                             alt="Company Logo" 
                                             className="w-32 h-32 mx-auto mb-4 object-contain"
                                         />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
+                                        <h4 className="font-semibold  mb-3 text-lg">Your Brand Here!</h4>
+                                        {/* <p className="text-sm text-gray-600 leading-relaxed">
                                             A leading aerospace engineering company specializing in drone technology and autonomous systems. 
                                             Committed to advancing student innovation and engineering education.
-                                        </p>
+                                        </p> */}
                                     </div>
                                     <div className="text-center">
-                                        <img 
+                                        {/* <img 
                                             src="/branding/UARAD_LOGO_DARK.png" 
                                             alt="Company Logo" 
                                             className="w-32 h-32 mx-auto mb-4 object-contain"
@@ -131,18 +130,17 @@ const SponsorsPage = () => {
                                         <p className="text-sm text-gray-600 leading-relaxed">
                                             Global technology leader in robotics and automation solutions. 
                                             Supporting the next generation of engineering talent through strategic partnerships.
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
                             </div>
 
                             {/* Silver Sponsors */}
-                            <div className="mb-12">
+                            {/* <div className="mb-12">
                                 <div className="flex items-center pt-10 justify-center mb-6">
                                     <h3 className="text-2xl font-bold text-gray-600 whitespace-nowrap">SILVER SPONSORS</h3>
                                 </div>
                                 <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    {/* Example Silver Sponsor - Replace with actual sponsors */}
                                     <div className="text-center">
                                         <img 
                                             src="/branding/UARAD_LOGO_DARK.png" 
@@ -180,15 +178,14 @@ const SponsorsPage = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Bronze Sponsors */}
-                            <div>
+                            {/* <div>
                                 <div className="flex items-center pt-10 justify-center mb-6">
                                     <h3 className="text-2xl font-bold text-amber-700 whitespace-nowrap">BRONZE SPONSORS</h3>
                                 </div>
                                 <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                    {/* Example Bronze Sponsors - Replace with actual sponsors */}
                                     <div className="text-center">
                                         <img 
                                             src="/branding/UARAD_LOGO_DARK.png" 
@@ -234,13 +231,13 @@ const SponsorsPage = () => {
                                         </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
 
                             {/* Call to Action */}
                             <div className="text-center mt-12 pt-8 ">
                                 <div className=" p-8 rounded-xl">
                                     <p className="text-lg  mb-8 leading-relaxed max-w-4xl mx-auto">
-                                        Supporting UA-RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAV design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UAVs, at national competitions, and across our digital platforms, reaching thousands of students and professionals annually. We welcome both in-kind contributions and financial support, with custom partnerships available.
+                                        Supporting UA-RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAS design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UASs, at national competitions, and across our digital platforms, reaching students and professionals alike. We welcome both in-kind contributions and financial support, with custom partnerships available.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                         <a 
@@ -261,10 +258,10 @@ const SponsorsPage = () => {
                                             Best regards,
                                             [Your Name]`
                                             )}`}
-                                            className="inline-block bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20">
+                                            className="inline-block w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20">
                                             Support Us Today
                                         </a>
-                                        <a href="/contact" className="inline-block bg-white text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205">
+                                        <a href="/contact" className="inline-block bg-white w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205">
                                             Contact Us
                                         </a>
                                     </div>

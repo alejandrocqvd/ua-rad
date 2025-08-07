@@ -8,9 +8,9 @@ export function ProgressBar({ progress }) {
         style={{ width: `${clampedProgress}%` }}
       >
         {clampedProgress > 0 && (
-          <span className="text-white text-sm font-medium whitespace-nowrap mr-3 md:mr-0 flex items-center">
+          <span className="text-white text-sm font-medium whitespace-nowrap mr-0 flex items-center">
             {clampedProgress}%
-            <span className="hidden md:inline ml-1">Complete</span>
+            <span className="hidden md:inline ml-1"></span>
           </span>
         )}
       </div>
