@@ -31,7 +31,7 @@ const TeamPage = () => {
                 {/* rounded corners + overflow-hidden here */}
                 <div className="w-11/12 max-w-7xl h-96 md:h-[28rem] rounded-2xl overflow-hidden flex">
                   <img
-                    src="/home/aboutUS.png"
+                    src="/home/aboutUs.png"
                     alt="About Us"
                     className="w-full h-full object-contain"  
                   />
