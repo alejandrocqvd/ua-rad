@@ -90,7 +90,7 @@ const MissionSection = () => {
 const SpecialtiesSection = () => {
   return (
     <section className="flex flex-row justify-center items-start w-full max-w-4xl mx-auto my-12 overflow-visible">
-      <div className="relative flex-1 z-10 mx-2 md:mx-0 md:-mr-16 bg-white rounded-xl border-2 border-[#247F4A] py-12 px-10 md:pr-24">
+      <div className="relative flex-1 min-w-0 z-10 mx-2 md:mx-0 md:-mr-16 bg-white rounded-xl border-2 border-[#247F4A] py-12 px-10 md:pr-24">
         <p className="text-left">
           <span className="font-bold">National Recognition. </span> 
           UA-RAD proudly represents the University of Alberta on a 
@@ -115,7 +115,7 @@ const SpecialtiesSection = () => {
         alt="UA Rad Team Photo"
         width={1089}
         height={812}
-        className="hidden md:flex relative flex-1 z-20 w-full h-[550px] rounded-xl border-2 border-[#247F4A] object-cover"
+        className="hidden md:flex relative flex-1 min-w-0  z-20 w-full h-[550px] rounded-xl border-2 border-[#247F4A] object-cover"
       />
     </section>
   );
