@@ -2,7 +2,7 @@ export const executiveMembers = [{
         title: "President - Electrical Lead",
         name: "Guneet Dhillon",
         subtitle: '4th-year Electrical Engineering Co-op',
-        bio: "Guneet Dhillon joined UA-RAD in 2025 as the Founder, President and Electrical Co-Lead. He leads power systems design, custom PCBs, sensor integration, and project management across the club. I have experience in PCB design, embedded systems, and previous competitions (CAN-SBX, RoboSub). ",
+        bio: "Guneet Dhillon joined UA-RAD in 2025 as the Founder, President and Electrical Co-Lead. He leads power systems design, custom PCBs, sensor integration, and project management across the club. He has experience in PCB design, embedded systems, and previous competitions (CAN-SBX, RoboSub).",
         photo: "/teampage/memberphotos/Guneet2.webp",
         linkedin: "https://www.linkedin.com/in/gundhil/"
     },
@@ -10,7 +10,8 @@ export const executiveMembers = [{
     {
         title: "Vice President - Electrical Lead",
         name: "Mark McKay",
-        bio: "Lorem ipsum dolor sit amet...",
+        subtitle: "4th-year Electrical Engineering",
+        bio: "Mark McKay joined UA-RAD in 2025 as Vice President and Electrical Co-Lead. He helps lead power systems design, custom PCBs, sensor integration, and motor control systems. He has experience in embedded systems, C/C++/Python programming, and PCB prototyping.",
         photo: "/teampage/memberphotos/markmckay.jpg",
         linkedin: "https://www.linkedin.com/in/mark-mckay-mm/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
@@ -55,18 +56,18 @@ export const mechanicalMembers = [
         title: "Mechanical Team",
         name: "Crysta Madrio",
         subtitle: "3rd-year Mechanical Engineering",
-        bio: "Crysta joined UA-RAD in 2025 and as part of the Mechanical Team. She helps with 3D modelling on SolidWorks, mechanical integration and manufacturing, and also supports the team's financial development. She is currently working at Pegasus, an aerospace technology startup",
+        bio: "Crysta joined UA-RAD in 2025 as part of the Mechanical Team. She helps with 3D modelling on SolidWorks, mechanical integration and manufacturing, and also supports the team's financial development. She is currently working at Pegasus, an aerospace technology startup.",
         photo: "/teampage/memberphotos/Crysta.jpg",
         linkedin: "https://www.linkedin.com/in/crysta-madrio-334099258/"
     },
-    {
-        title: "Mechanical Team",
-        name: "Fawwaz Hameed",
-        subtitle: "3rd-year Mechanical Engineering",
-        bio: "Fawwaz joined UA-RAD in 2025 and as part of the Mechanical Team. He specializes with airframe design and autopilot software like ArduPilot. He has prior autopilot and airframe experience thanks to UAARG ",
-        photo: "/teampage/memberphotos/fawwazhameed.jpg",
-        linkedin: "https://www.linkedin.com/in/fawwaz-hameed-32095a238/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-    }
+    // {
+    //     title: "Mechanical Team",
+    //     name: "Fawwaz Hameed",
+    //     subtitle: "3rd-year Mechanical Engineering",
+    //     bio: "Fawwaz joined UA-RAD in 2025 and as part of the Mechanical Team. He specializes with airframe design and autopilot software like ArduPilot. He has prior autopilot and airframe experience thanks to UAARG ",
+    //     photo: "/teampage/memberphotos/fawwazhameed.jpg",
+    //     linkedin: "https://www.linkedin.com/in/fawwaz-hameed-32095a238/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    // }
 ];
 
 // export const electricalMembers = [

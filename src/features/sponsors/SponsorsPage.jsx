@@ -232,7 +232,7 @@ const SponsorsPage = () => {
                             {/* Call to Action */}
                             <div className="text-center mt-12 pt-8 ">
                                 <div className=" p-8 rounded-xl">
-                                    <p className="text-lg  mb-8 leading-relaxed max-w-4xl mx-auto">
+                                    <p className="text-lg  mb-8 bg-white z-10 leading-relaxed max-w-4xl mx-auto">
                                         Supporting UA-RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAS design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UASs, at national competitions, and across our digital platforms, reaching students and professionals alike. We welcome both in-kind contributions and financial support, with custom partnerships available.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
