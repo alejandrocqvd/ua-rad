@@ -51,7 +51,6 @@ export const mechanicalMembers = [
         photo: "/teampage/memberphotos/Jacobkosak.jpg",
         linkedin: "https://www.linkedin.com/in/jacob-kosak-18977a2a9/?originalSubdomain=ca"
     },
-
     {
         title: "Mechanical Team",
         name: "Crysta Madrio",
@@ -59,6 +58,14 @@ export const mechanicalMembers = [
         bio: "Crysta joined UA-RAD in 2025 and as part of the Mechanical Team. She helps with 3D modelling on SolidWorks, mechanical integration and manufacturing, and also supports the team's financial development. She is currently working at Pegasus, an aerospace technology startup",
         photo: "/teampage/memberphotos/Crysta.jpg",
         linkedin: "https://www.linkedin.com/in/crysta-madrio-334099258/"
+    },
+    {
+        title: "Mechanical Team",
+        name: "Fawwaz Hameed",
+        subtitle: "3rd-year Mechanical Engineering",
+        bio: "Fawwaz joined UA-RAD in 2025 and as part of the Mechanical Team. He specializes with airframe design and autopilot software like ArduPilot. He has prior autopilot and airframe experience thanks to UAARG ",
+        photo: "/teampage/memberphotos/fawwazhameed.jpg",
+        linkedin: "https://www.linkedin.com/in/fawwaz-hameed-32095a238/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
 ];
 
@@ -122,7 +129,7 @@ export const softwareMembers = [
         subtitle: "4th-year Software Engineering",
         bio: "Jacob joined UARAD in 2025 as part of the Software Team, focusing on flight software & autonomy. Graduating in 2026 with extensive experience including 2x Intern at Apple building AI log triaging systems, spearheaded department's first AI Agent for autonomous code generation. ",
         photo: "/teampage/memberphotos/jacobfeng.jpg",
-        linkedin: "https://www.linkedin.com/in/jacobfeng/"
+        linkedin: "https://www.linkedin.com/in/jacobsolives/"
     },
     // Add more members as needed
 ];
