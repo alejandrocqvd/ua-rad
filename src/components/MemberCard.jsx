@@ -20,7 +20,7 @@ export function MemberCard({title, name, bio, photo, linkedin, subtitle}) {
                     <img 
                         src={photo} 
                         alt={`${name}'s profile`} 
-                        className="w-full h-full object-cover mb-4"
+                        className={`w-full h-full object-cover mb-4 ${name === "Guneet Dhillon" ? "object-top" : "object-center"}`}
                     />   
                     <div className="flex justify-center h-10  items-center text-gray-700 text-lg italic">
                         {title}

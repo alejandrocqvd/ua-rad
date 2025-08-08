@@ -49,7 +49,6 @@ const SponsorsPage = () => {
                                 <ul className="text-left  space-y-2">
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Medium logo on team apparel and promotional materials</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during competition presentations and team events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> One invitation to showcase events and demo days</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Group thank-you post on website and social media</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to share promotional materials at events</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
@@ -67,12 +66,9 @@ const SponsorsPage = () => {
                                     Our premier sponsorship level offering maximum exposure, exclusivity, and unmatched recruiting opportunities.
                                 </p>
                                 <ul className="text-left  space-y-2">
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Prominent logo on UAVs, team apparel, and all promotional materials</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Prominent logo on UASs, team apparel, and all promotional materials</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Featured acknowledgment at competitions and events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Two invitations to showcase events and demo days</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Dedicated sponsor spotlight post on social media</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to display booth or banner at UA‑RAD events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> First right of renewal for exclusive Gold tier</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
                                 </ul>
                             </div>

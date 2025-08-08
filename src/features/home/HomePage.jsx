@@ -64,9 +64,9 @@ const MissionSection = () => {
   return (
     <section className="flex flex-col justify-center items-center max-w-4xl mx-10 mt-12 md:mt-0 md:mx-0">
       <div className="flex flex-col md:flex-row items-center md:items-end">
-        <div className="md:flex-1 flex flex-col mb-8 md:mb-0">
+        <div className="md:flex-1 flex flex-col mb-8 md:mb-0 bg-white">
           <p className="mb-8 md:mb-6 text-left font-light text-[#007C41] text-4xl">OUR MISSION</p>
-          <p className="md:mr-4">
+          <p className="md:mr-4 bg-white z-10">
             At UA-RAD, we bring together students who are passionate about drones, 
             technology, and innovation. Our goal is to design and build advanced aerial 
             systems while giving members the chance to learn new skills, work as 
@@ -163,7 +163,7 @@ const FAQSection = () => {
       <CollapsableInfo question={"Do I need experience to join?"} answer={"No experience is required! We welcome students from all backgrounds and skill levels. Whether you're into engineering, coding, design, or just curious about drones, there's a place for you on the team."}  />
       <CollapsableInfo question={"What skills can I learn by joining UA-RAD?"} answer={"By joining UA-RAD, you can develop hands-on experience in areas like drone assembly, soldering, 3D printing, flight tuning, and FPV piloting. You'll also gain teamwork, problem-solving, and project management skills by working on real builds with other students."}  />
       <CollapsableInfo question={"What kind of drones do you build?"} answer={"We focus on FPV (First Person View) specialized drones designed for agility and performance. Our builds typically include carbon fiber frames, flight controllers, and video transmission systems for immersive piloting."}  />
-      <CollapsableInfo question={"What competitions do you attend?"} answer={"We compete in events like the Aerial Evolution Association of Canada's FPV Racing Series and other drone-focused challenges. Competitions help us test our designs and push our skills to the next level."}  />
+      <CollapsableInfo question={"What competitions do you attend?"} answer={"We compete in the Aerial Evolution Association of Canada's National Student UAS Competition, where we design and build unmanned aerial systems for real-world scenarios. This competition challenges us to create innovative solutions for practical applications like wildfire response automation."}  />
     </section>
   );
 }

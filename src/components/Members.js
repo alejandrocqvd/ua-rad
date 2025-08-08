@@ -2,8 +2,8 @@ export const executiveMembers = [{
         title: "President - Electrical Lead",
         name: "Guneet Dhillon",
         subtitle: '4th-year Electrical Engineering Co-op',
-        bio: "Guneet Dhillon joined UA-RAD in 2025 as the sole founder and sitting president while also serving as the Electrical Co-Lead. Working on electrical component selection, PCB design, microcontroller design and development while overseeing project management across the club.",
-        photo: "/teampage/memberphotos/guneetdhillon.jpg",
+        bio: "Guneet Dhillon joined UA-RAD in 2025 as the Founder, President and Electrical Co-Lead. He leads power systems design, custom PCBs, sensor integration, and project management across the club. I have experience in PCB design, embedded systems, and previous competitions (CAN-SBX, RoboSub). ",
+        photo: "/teampage/memberphotos/Guneet2.webp",
         linkedin: "https://www.linkedin.com/in/gundhil/"
     },
 
@@ -140,7 +140,7 @@ export const socialMediaMembers = [
         name: "Natalie Ohanjanians",
         subtitle: "2nd-year Bachelor of English",
         bio: "Natalie joined UARAD in 2025 as part of the Social Media Team. She manages our social media presence and content creation, helping to showcase our drone projects and team achievements.",
-        photo: "/teampage/memberphotos/Natalie.jpg",
+        photo: "/teampage/memberphotos/Natalie2.webp",
         linkedin: "https://www.linkedin.com/in/natalie-ohanjanians-740b26228/"
     },
     // Add more social media members as needed

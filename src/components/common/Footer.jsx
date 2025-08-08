@@ -36,7 +36,7 @@ const Footer = () => {
             <div className="flex flex-col-reverse md:flex-row justify-center items-start">
                 <div className="flex flex-col justify-center items-center md:items-start flex-1">
                     <p className="text-2xl font-semibold mb-2">UA-RAD</p>
-                    <p className="text-center md:text-left mb-4 md:mb-0">Innovating the future of aerial racing drones in Canada. Join us in shaping tomorrow's FPV drone racing competitions.</p>
+                    <p className="text-center md:text-left mb-4 md:mb-0">Innovating the future of unmanned aerial systems in Canada. Join us in shaping tomorrow's UAS competitions and advancing drone technology.</p>
                     <p className="mt-8 mb-1 font-light">Powered by</p>
                     <a href='https://www.nullus.ca/' target='_blank' rel="noopener noreferrer">
                         <Image
