@@ -1,281 +1,226 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
+import { useEffect } from "react";
+
+const tiers = {
+  bronze: { name: "BRONZE", color: "text-amber-700", price: "$500+" },
+  silver: { name: "SILVER", color: "text-gray-500", price: "$1000+" },
+  gold: { name: "GOLD", color: "text-yellow-600", price: "$2500+" },
+};
+
+const rows = [
+{
+    label: "Company Logo on the Vehicle and Website",
+    values: { bronze: "Small", silver: "Medium", gold: "Large" },
+  },
+  {
+    label: "Access to team resume bank",
+    values: { bronze: "check", silver: "check", gold: "check" },
+  },
+{
+    label: "Recognition in Presentations",
+    values: { bronze: "check", silver: "check", gold: "check" },
+  },
+  {
+    label: "Social Media Mentions and Advertisements",
+    values: { bronze: "x", silver: "check", gold: "check" },
+  },
+  {
+    label: "Group thank-you post on website and social media",
+    values: { bronze: "x", silver: "check", gold: "check" },
+  },
+  {
+    label: "Quarterly promotional video on social media showing your contribution",
+    values: { bronze: "x", silver: "x", gold: "check" },
+  },
+  {
+    label: "Open collaborations — unique and tailored benefits to maximize partnership impact",
+    values: { bronze: "x", silver: "x", gold: "check" },
+  },
+];
+
+const cellRender = (v) => {
+  if (v === "check") {
+    return <span className="text-xl leading-none">✓</span>;
+  }
+  if (v === "x") {
+    return <span className="text-xl leading-none">×</span>;
+  }
+  return <span className="">{v}</span>;
+};
 
 const SponsorsPage = () => {
-    useEffect(() => {
-        if (typeof window !== "undefined" && window.particlesJS) {
-        window.particlesJS.load("particles-js", "/assets/particlesjs-config-home.json", () => {
-            console.log("callback - particles.js config loaded")
-        })
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.particlesJS) {
+      window.particlesJS.load(
+        "particles-js",
+        "/assets/particlesjs-config-home.json",
+        () => {
+          console.log("callback - particles.js config loaded");
         }
-    }, [])
+      );
+    }
+  }, []);
 
-    return (
-        <div className="relative min-h-screen w-full overflow-hidden bg-white ">
-            <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0"></div>
-            <div className="relative pb-20  z-10 min-h-screen flex flex-col">
-                <h1 className="text-center text-4xl md:text-5xl font-light  mb-10 leading-tight  mt-26 md:mt-40"> Sponsorship Program </h1>
+  return (
+    <div className="relative min-h-screen w-full overflow-hidden bg-white">
+      <div id="particles-js" className="absolute top-0 left-0 w-full h-full z-0" />
+      <div className="relative z-10 min-h-screen flex flex-col pb-24">
+        <h1 className="text-center text-4xl md:text-5xl font-light mb-10 leading-tight mt-26 md:mt-40">
+          Sponsorship Program
+        </h1>
 
-                {/* Sponsorship Tier Details */}
-                <div className="container mx-auto px-4 mt-4 md:mt-8 lg:mt-8 bg-white border-[#247F4A] border-2 rounded-xl max-w-6xl">
-                    <div className=" mx-auto">
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 relative">
-                            {/* Bronze Tier */}
-                            <div className="bg-white border-[#247F4A] p-8 text-center">
-                                <h3 className="text-2xl font-bold text-amber-700 mb-4">BRONZE</h3>
-                                <div className="text-4xl font-bold text-amber-700 mb-6">$300 – $999</div>
-                                <p className=" mb-6 leading-relaxed">
-                                    Ideal for local businesses and emerging brands. Enjoy branding opportunities and recognition while supporting student-driven engineering.
-                                </p>
-                                <ul className="text-left  space-y-4">
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Small logo on promotional materials and team apparel</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
-                                </ul>
-                            </div>
-
-                            {/* Vertical Separator 1 */}
-                            <div className="hidden md:block absolute left-1/3 top-10 bottom-10 w-[2px] bg-[#247F4A]"></div>
-
-                            {/* Silver Tier */}
-                            <div className="bg-white border-[#247F4A] p-8 text-center">
-                                <h3 className="text-2xl font-bold text-gray-600 mb-4">SILVER</h3>
-                                <div className="text-4xl font-bold text-gray-600 mb-6">$1,000 – $2,499</div>
-                                <p className=" mb-6 leading-relaxed">
-                                    Designed for companies committed to student advancement, with premium visibility and access to talent.
-                                </p>
-                                <ul className="text-left  space-y-4">
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Medium logo on team apparel and promotional materials</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Group thank-you post on website and social media</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to share promotional materials at events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
-                                </ul>
-                            </div>
-
-                            {/* Vertical Separator 2 */}
-                            <div className="hidden md:block absolute left-2/3 top-10 bottom-10 w-[2px] bg-[#247F4A]"></div>
-
-                            {/* Gold Tier */}
-                            <div className="bg-white border-[#247F4A] p-8 text-center">
-                                <h3 className="text-2xl font-bold text-yellow-600 mb-4">GOLD</h3>
-                                <div className="text-4xl font-bold text-yellow-600 mb-6">$2,500+</div>
-                                <p className=" mb-6 leading-relaxed">
-                                    Our premier sponsorship level offering maximum exposure, exclusivity, and unmatched recruiting opportunities.
-                                </p>
-                                <ul className="text-left  space-y-4">
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Prominent logo on UASs, team apparel, and all promotional materials</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Quarterly promotional video on social media showing your contribution to the effort</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Featured acknowledgment at competitions and events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Dedicated sponsor spotlight post on social media</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Group thank-you post on website and social media</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to share promotional materials at events</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Open collaborations - message us for unique and tailored benefits to maximize the partnership's impact</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+        {/* Sponsorship Comparison Table */}
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mx-auto max-w-5xl overflow-hidden rounded-xl border-2 border-[#247F4A] bg-white">
+            {/* Header row */}
+            <div
+              role="row"
+              className="grid grid-cols-4 items-end gap-2 px-4 md:px-8 pt-6 pb-4"
+            >
+              <div role="columnheader" className="font-medium" />
+              {["bronze", "silver", "gold"].map((k) => (
+                <div
+                  key={k}
+                  role="columnheader"
+                  className={`text-center font-bold ${tiers[k].color}`}
+                >
+                  {tiers[k].name}
                 </div>
-
-                {/* Current Sponsors Section */}
-                <div className="container mx-auto px-0 md:px-4 mt-16">
-                    <div className="max-w-5xl mx-auto">
-                        <div className="  p-8">
-                            <div className="flex items-center justify-center mb-12">
-                                <div className="flex-1 border-1 border-[#247F4A] mr-4"></div>
-                                <h2 className="text-3xl font-light  whitespace-nowrap">OUR SPONSORS</h2>
-                                <div className="flex-1 border-1 border-[#247F4A] ml-4"></div>
-                            </div>
-                            
-                            {/* Gold Sponsors */}
-                            <div className="mb-12">
-                                <div className="flex items-center justify-center mb-6">
-                                    {/* <h3 className="text-2xl font-bold text-yellow-600 whitespace-nowrap">GOLD SPONSORS</h3> */}
-                                </div>
-                                <div className=" bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    <div className="text-center">
-                                        {/* <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-32 h-32 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            A leading aerospace engineering company specializing in drone technology and autonomous systems. 
-                                            Committed to advancing student innovation and engineering education.
-                                        </p> */}
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-32 h-32 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Your Brand Here!</h4>
-                                        {/* <p className="text-sm text-gray-600 leading-relaxed">
-                                            A leading aerospace engineering company specializing in drone technology and autonomous systems. 
-                                            Committed to advancing student innovation and engineering education.
-                                        </p> */}
-                                    </div>
-                                    <div className="text-center">
-                                        {/* <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-32 h-32 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            Global technology leader in robotics and automation solutions. 
-                                            Supporting the next generation of engineering talent through strategic partnerships.
-                                        </p> */}
-                                    </div>
-                                </div>
-                            </div>
-
-                            {/* Silver Sponsors */}
-                            {/* <div className="mb-12">
-                                <div className="flex items-center pt-10 justify-center mb-6">
-                                    <h3 className="text-2xl font-bold text-gray-600 whitespace-nowrap">SILVER SPONSORS</h3>
-                                </div>
-                                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-28 h-28 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            Innovative software solutions provider for the aerospace industry. 
-                                            Dedicated to fostering student engineering excellence and technological advancement.
-                                        </p>
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-28 h-28 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            Manufacturing leader in precision engineering components. 
-                                            Supporting student competitions to develop future industry professionals.
-                                        </p>
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-28 h-28 mx-auto mb-4 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-3 text-lg">Company Name</h4>
-                                        <p className="text-sm text-gray-600 leading-relaxed">
-                                            Research and development firm focused on cutting-edge aerospace technologies. 
-                                            Committed to educational partnerships and student mentorship programs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> */}
-
-                            {/* Bronze Sponsors */}
-                            {/* <div>
-                                <div className="flex items-center pt-10 justify-center mb-6">
-                                    <h3 className="text-2xl font-bold text-amber-700 whitespace-nowrap">BRONZE SPONSORS</h3>
-                                </div>
-                                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-20 h-20 mx-auto mb-3 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-2 text-sm">Company Name</h4>
-                                        <p className="text-xs text-gray-600 leading-relaxed">
-                                            Local engineering firm supporting student innovation and community development.
-                                        </p>
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-20 h-20 mx-auto mb-3 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-2 text-sm">Company Name</h4>
-                                        <p className="text-xs text-gray-600 leading-relaxed">
-                                            Technology startup focused on sustainable aerospace solutions and student partnerships.
-                                        </p>
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-20 h-20 mx-auto mb-3 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-2 text-sm">Company Name</h4>
-                                        <p className="text-xs text-gray-600 leading-relaxed">
-                                            Educational technology provider committed to advancing engineering education.
-                                        </p>
-                                    </div>
-                                    <div className="text-center">
-                                        <img 
-                                            src="/branding/UARAD_LOGO_DARK.png" 
-                                            alt="Company Logo" 
-                                            className="w-20 h-20 mx-auto mb-3 object-contain"
-                                        />
-                                        <h4 className="font-semibold  mb-2 text-sm">Company Name</h4>
-                                        <p className="text-xs text-gray-600 leading-relaxed">
-                                            Consulting firm specializing in aerospace engineering and student development programs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> */}
-
-                            {/* Call to Action */}
-                            <div className="text-center mt-12 pt-8 ">
-                                <div className=" p-8 rounded-xl">
-                                    <p className="text-lg  mb-8 bg-white z-10 leading-relaxed max-w-4xl mx-auto">
-                                        Supporting UA-RAD is an investment in the future of engineering talent. Our members gain hands-on experience in UAS design, electronics, and systems integration, while sponsors connect early with highly skilled students solving real-world challenges. Your brand will be prominently displayed on our UASs, at national competitions, and across our digital platforms, reaching students and professionals alike. We welcome both in-kind contributions and financial support, with custom partnerships available.
-                                    </p>
-                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                                        <a 
-                                            href={`mailto:uarad@gmail.com?subject=${encodeURIComponent(
-                                                'Sponsorship Inquiry - UA-RAD'
-                                            )}&body=${encodeURIComponent(
-                                                `Hello UA-RAD team,
-
-                                            We are interested in exploring sponsorship opportunities with your team. Please find our details below:
-
-                                            Company Name:
-                                            Contact Person:
-                                            Position/Role:
-                                            Sponsorship Interest (monetary, equipment, mentorship, etc.):
-
-                                            [Your message here...]
-
-                                            Best regards,
-                                            [Your Name]`
-                                            )}`}
-                                            className="inline-block w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20">
-                                            Support Us Today
-                                        </a>
-                                        <a href="/contact" className="inline-block bg-white w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205">
-                                            Contact Us
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              ))}
             </div>
+
+            {/* Body rows */}
+            <div className="divide-y divide-[#247F4A]/30">
+              {rows.map((r) => (
+                <div
+                  key={r.label}
+                  role="row"
+                  className="grid grid-cols-4 items-center gap-2 px-4 md:px-8 py-4 md:py-5"
+                >
+                  <div className="">{r.label}</div>
+                  {["bronze", "silver", "gold"].map((k) => (
+                    <div
+                      key={k}
+                      role="cell"
+                      className="text-center"
+                    >
+                      {cellRender(r.values[k])}
+                    </div>
+                  ))}
+                </div>
+              ))}
+
+              {/* Price Category row */}
+              <div
+                role="row"
+                className="grid grid-cols-4 items-center gap-2 px-4 md:px-8 py-5"
+              >
+                <div className="font-semibold">Price Category</div>
+                {["bronze", "silver", "gold"].map((k) => (
+                  <div
+                    key={k}
+                    role="cell"
+                    className={`text-center font-semibold ${tiers[k].color}`}
+                  >
+                    {tiers[k].price}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
-    );
-}
+
+        {/* OUR SPONSORS Section */}
+        <div className="container mx-auto px-0 md:px-4 mt-16">
+          <div className="max-w-5xl mx-auto">
+            <div className="p-8">
+              <div className="flex items-center justify-center mb-12">
+                <div className="flex-1 border-1 border-[#247F4A] mr-4"></div>
+                <h2 className="text-3xl font-light whitespace-nowrap">OUR SPONSORS</h2>
+                <div className="flex-1 border-1 border-[#247F4A] ml-4"></div>
+              </div>
+
+              {/* Gold Sponsors */}
+              {/* <div className="mb-12">
+                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div className="text-center">
+                    <img
+                      src="/branding/UARAD_LOGO_DARK.png"
+                      alt="Company Logo"
+                      className="w-32 h-32 mx-auto mb-4 object-contain"
+                    />
+                    <h4 className="font-semibold mb-3 text-lg">Your Brand Here!</h4>
+                  </div>
+                </div>
+              </div> */}
+
+            <div className="mb-12">
+                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl flex justify-center items-center mx-auto">
+                  <div className="text-center">
+                    <img
+                      src="/branding/UARAD_LOGO_DARK.png"
+                      alt="Company Logo"
+                      className="w-32 h-32 mx-auto mb-4 object-contain"
+                    />
+                    <h4 className="font-semibold mb-3 text-lg">Your Brand Here!</h4>
+                  </div>
+                </div>
+              </div>
+
+              {/* Call to Action */}
+              <div className="text-center mt-12 pt-8">
+                <div className="p-8 rounded-xl">
+                  <p className="text-lg mb-8 bg-white z-10 leading-relaxed max-w-4xl mx-auto">
+                    Supporting UA-RAD is an investment in the future of engineering
+                    talent. Our members gain hands-on experience in UAS design,
+                    electronics, and systems integration, while sponsors connect early
+                    with highly skilled students solving real-world challenges. Your
+                    brand will be prominently displayed on our UASs, at national
+                    competitions, and across our digital platforms, reaching students
+                    and professionals alike. We welcome both in-kind contributions and
+                    financial support, with custom partnerships available.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a
+                      href={`mailto:uarad@gmail.com?subject=${encodeURIComponent(
+                        "Sponsorship Inquiry - UA-RAD"
+                      )}&body=${encodeURIComponent(
+                        `Hello UA-RAD team,
+
+We are interested in exploring sponsorship opportunities with your team. Please find our details below:
+
+Company Name:
+Contact Person:
+Position/Role:
+Sponsorship Interest (monetary, equipment, mentorship, etc.):
+
+[Your message here...]
+
+Best regards,
+[Your Name]`
+                      )}`}
+                      className="inline-block w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20"
+                    >
+                      Support Us Today
+                    </a>
+                    <a
+                      href="/contact"
+                      className="inline-block bg-white w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205"
+                    >
+                      Contact Us
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* End CTA */}
+            </div>
+          </div>
+        </div>
+        {/* End Sponsors Section */}
+      </div>
+    </div>
+  );
+};
 
 export default SponsorsPage;
