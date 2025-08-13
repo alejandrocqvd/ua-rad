@@ -28,10 +28,10 @@ const SponsorsPage = () => {
                                 <p className=" mb-6 leading-relaxed">
                                     Ideal for local businesses and emerging brands. Enjoy branding opportunities and recognition while supporting student-driven engineering.
                                 </p>
-                                <ul className="text-left  space-y-2">
+                                <ul className="text-left  space-y-4">
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Small logo on promotional materials and team apparel</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA‑RAD’s website and social media</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
                                 </ul>
                             </div>
@@ -46,11 +46,12 @@ const SponsorsPage = () => {
                                 <p className=" mb-6 leading-relaxed">
                                     Designed for companies committed to student advancement, with premium visibility and access to talent.
                                 </p>
-                                <ul className="text-left  space-y-2">
+                                <ul className="text-left  space-y-4">
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Medium logo on team apparel and promotional materials</li>
-                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during competition presentations and team events</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Group thank-you post on website and social media</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to share promotional materials at events</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
                                 </ul>
                             </div>
@@ -65,11 +66,17 @@ const SponsorsPage = () => {
                                 <p className=" mb-6 leading-relaxed">
                                     Our premier sponsorship level offering maximum exposure, exclusivity, and unmatched recruiting opportunities.
                                 </p>
-                                <ul className="text-left  space-y-2">
+                                <ul className="text-left  space-y-4">
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Prominent logo on UASs, team apparel, and all promotional materials</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Quarterly promotional video on social media showing your contribution to the effort</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Featured acknowledgment at competitions and events</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Dedicated sponsor spotlight post on social media</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Group thank-you post on website and social media</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Opportunity to share promotional materials at events</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Acknowledgment during team events and competition presentations</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Recognition on UA-RAD's website</li>
                                     <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Access to team resume bank</li>
+                                    <li className="flex items-center"><span className="text-green-600 mr-2">✓</span> Open collaborations - message us for unique and tailored benefits to maximize the partnership's impact</li>
                                 </ul>
                             </div>
                         </div>
