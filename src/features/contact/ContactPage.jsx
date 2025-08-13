@@ -169,10 +169,10 @@ const ContactInfoSection = () => {
             <h3 className="font-bold text-lg text-[#007C41] mb-2">Email</h3>
             <p className="text-gray-700">
               <a
-                href="mailto:info@uarad.ca"
+                href="mailto:uarad.uofa@gmail.com"
                 className="hover:text-[#007C41] transition-colors"
               >
-                info@uarad.ca
+                uarad.uofa@gmail.com
               </a>
             </p>
           </div>

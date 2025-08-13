@@ -3,9 +3,7 @@ export function RoleTitle({title}) {
 
 
     return (
-        <div className="flex justify-center items-center h-20 text-4xl text-[#247F4A] font-bold relative z-10">
-            {title}
-        </div>
+        <p className="mt-6 mb-8 text-center md:text-left font-light text-[#007C41] text-4xl mx-auto">{title}</p>
     );
 }
 

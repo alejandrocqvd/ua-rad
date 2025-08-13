@@ -87,7 +87,7 @@ const Footer = () => {
                     <p className="mb-4 w-44">University of Alberta</p>
                     <p className="mb-4 w-44">116 St & 85 Ave</p>
                     <p className="mb-4 w-44">Edmonton, AB T6G 2R3</p>
-                    <p className="w-44">uarad@gmail.com</p>
+                    <p className="w-44">uarad.uofa@gmail.com</p>
                 </div>
             </div>
         </footer>

@@ -24,12 +24,12 @@ const TeamPage = () => {
     }, []);
 
           return (
-            <div className="relative min-h-screen w-full overflow-hidden bg-white">
+            <div className="relative min-h-screen w-full overflow-hidden bg-white max-w-5xl mx-auto">
               <div id="particles-js" className="absolute inset-0 z-0"></div>
           
               <div className="flex justify-center items-center pt-20 pb-10 relative z-10 md:pt-30">
                 {/* rounded corners + overflow-hidden here */}
-                <div className="w-11/12 max-w-7xl h-96 md:h-[28rem] rounded-2xl overflow-hidden flex">
+                <div className="h-96 md:h-[28rem] rounded-2xl overflow-hidden flex">
                   <img
                     src="/home/aboutUs.png"
                     alt="About Us"
@@ -37,11 +37,9 @@ const TeamPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-center items-center mt-10 relative z-10">
-                <div className="bg-white border-4 md:border-5 border-[#247F4A] w-11/12 md:w-2/3 flex flex-col justify-center items-center rounded-2xl">
-                    <div className="h-auto md:h-20 content-normal text-2xl md:text-4xl mt-5 px-4 text-center">
-                        Meet The UA-RAD 2025 Team
-                    </div>
+              <div className="flex justify-center items-center mt-10 relative z-10 md:mx-8">
+                <div className="bg-white border-2 md:border-2 border-[#247F4A] flex flex-col justify-center items-center rounded-2xl py-8">
+                    <p className="mt-6 mb-8 text-center md:text-left font-light text-[#007C41] text-4xl mx-auto">MEET THE TEAM</p>
                     <div className="text-center text-base md:text-xl mx-4 md:mx-8 mb-5">
                         A multidisciplinary team of innovators merging mechanical, electrical, and software expertise to pioneer the future of FPV drones platforms at the University of Alberta.                    
                     </div>
@@ -50,7 +48,7 @@ const TeamPage = () => {
         
   
             <div className="flex flex-col pt-10 justify-center items-center mb-14">
-              <RoleTitle title="Executives "/>
+              <RoleTitle title="EXECUTIVES "/>
               <div className="w-full max-w-5xl">
                 <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                   {executiveMembers.map((member, index) => (
@@ -66,7 +64,7 @@ const TeamPage = () => {
               </div>
             </div>
             <div className="flex flex-col justify-center items-center mb-14">
-                <RoleTitle title="Mechanical"/>
+                <RoleTitle title="MECHANICAL"/>
                 <div className="w-full max-w-5xl"> 
                   <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {mechanicalMembers.map((member, index) => (
@@ -98,7 +96,7 @@ const TeamPage = () => {
                 </div>
             </div> */}
             <div className="flex flex-col justify-center items-center mb-14">
-                <RoleTitle title="Software"/>
+                <RoleTitle title="SOFTWARE"/>
                 <div className="w-full max-w-5xl"> 
                   <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {softwareMembers.map((member, index) => (
@@ -114,7 +112,7 @@ const TeamPage = () => {
                 </div>
             </div>
             <div className="flex flex-col justify-center items-center mb-14">
-                <RoleTitle title="Social Media"/>
+                <RoleTitle title="SOCIAL MEDIA"/>
                 <div className="w-full max-w-5xl"> 
                   <div className={`flex flex-wrap justify-center gap-8 px-4`}>
                     {socialMediaMembers.map((member, index) => (

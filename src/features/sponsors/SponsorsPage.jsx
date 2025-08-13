@@ -183,7 +183,7 @@ const SponsorsPage = () => {
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
-                      href={`mailto:uarad@gmail.com?subject=${encodeURIComponent(
+                      href={`mailto:uarad.uofa@gmail.com?subject=${encodeURIComponent(
                         "Sponsorship Inquiry - UA-RAD"
                       )}&body=${encodeURIComponent(
                         `Hello UA-RAD team,
