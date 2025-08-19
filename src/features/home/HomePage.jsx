@@ -111,8 +111,8 @@ const SpecialtiesSection = () => {
         </p>
       </div>
       <Image 
-        src="/home/aboutUs.png"
-        alt="UA Rad Team Photo"
+        src="/home/manHoldingDrone.jpg"
+        alt="Man holding a drone"
         width={1089}
         height={812}
         className="hidden md:flex relative flex-1 min-w-0  z-20 w-full h-[550px] rounded-xl border-2 border-[#247F4A] object-cover"

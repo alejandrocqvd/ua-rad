@@ -128,8 +128,8 @@ const ContactFormSection = () => {
       </div>
 
       <Image
-        src="/home/aboutUs.png"
-        alt="UA Rad Team Photo"
+        src="/home/guneetThumbsUp.png"
+        alt="Mr. President giving a thumbs up"
         width={1089}
         height={812}
         className="md:relative z-20 h-80 md:h-[600px] md:w-80 rounded-xl border-2 mb-2 md:mb-0 border-[#247F4A] object-cover flex-shrink-0"
@@ -205,8 +205,8 @@ const ContactInfoSection = () => {
 
       <div className="hidden md:flex relative z-20 flex-shrink-0 md:flex-1">
         <Image
-          src="/home/aboutUs.png"
-          alt="UA Rad Team Photo"
+          src="/home/guneetThumbsUp.png"
+          alt="Mr. President giving a thumbs up"
           fill
           className="object-cover rounded-xl border-2 border-[#247F4A]"
         />
