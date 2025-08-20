@@ -181,7 +181,7 @@ const SponsorsPage = () => {
                     and professionals alike. We welcome both in-kind contributions and
                     financial support, with custom partnerships available.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a
                       href={`mailto:uarad.uofa@gmail.com?subject=${encodeURIComponent(
                         "Sponsorship Inquiry - UA-RAD"
@@ -200,13 +200,13 @@ Sponsorship Interest (monetary, equipment, mentorship, etc.):
 Best regards,
 [Your Name]`
                       )}`}
-                      className="inline-block w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20"
+                      className="inline-block w-full sm:w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 text-center"
                     >
                       Support Us Today
                     </a>
                     <a
                       href="/contact"
-                      className="inline-block bg-white w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205"
+                      className="inline-block bg-white w-full sm:w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 text-center"
                     >
                       Contact Us
                     </a>
