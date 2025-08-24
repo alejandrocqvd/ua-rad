@@ -87,7 +87,7 @@ export function MemberCard({ title, name, bio, photo, linkedin, subtitle }) {
           {/* BACK */}
           <div className="absolute inset-0 flex flex-col overflow-hidden rounded-2xl border-4 border-[#247F4A] bg-white text-gray-700 [transform:rotateY(180deg)] [backface-visibility:hidden]">
             <div className="mx-4 h-[78%] space-y-2 overflow-hidden px-2">
-              <div className="mt-2 flex items-center justify-center text-2xl font-bold">
+              <div className="mt-2 flex items-center justify-center text-xl font-bold">
                 {name}
               </div>
               {subtitle && (
