@@ -181,15 +181,13 @@ const ContactInfoSection = () => {
           <div className="border-t border-gray-200 pt-6">
             <h3 className="font-bold text-lg text-[#007C41] mb-2">Social Media</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-700 hover:text-[#007C41] transition-colors">
+              <a href="https://www.instagram.com/uofa_rad?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="text-gray-700 hover:text-[#007C41] transition-colors">
                 Instagram
               </a>
-              <a href="#" className="text-gray-700 hover:text-[#007C41] transition-colors">
+              <a href="https://www.linkedin.com/company/ua-rad/posts/?feedView=all" className="text-gray-700 hover:text-[#007C41] transition-colors">
                 LinkedIn
               </a>
-              <a href="#" className="text-gray-700 hover:text-[#007C41] transition-colors">
-                YouTube
-              </a>
+              {/* no youtube according to Mr. President */}
             </div>
           </div>
 
