@@ -15,6 +15,15 @@ export const executiveMembers = [{
         photo: "/teampage/memberphotos/markmckay.jpg",
         linkedin: "https://www.linkedin.com/in/mark-mckay-mm/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
     },
+
+    {
+        title: "Project Manager",
+        name: "Josh Williams",
+        subtitle: "4th-year Civil Engineering Co-op",
+        bio: "Josh joined UA-RAD in August of 2025 as the Project Manager and Lead of Business Development. He brings co-op experience managing large-scale construction projects and will oversee budget, risk management, and project progression.",
+        photo: "/teampage/memberphotos/Josh.jpg",
+        linkedin: "https://www.linkedin.com/in/joshhwilliams28/"
+    },
     
 
     // Add more members as needed
