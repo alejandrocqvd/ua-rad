@@ -53,7 +53,7 @@ const AboutSection = () => {
           Alberta dedicated to pushing the limits of FPV (First-Person View) 
           drone technology. We design, build, and fly custom high 
           performance drones. Ultimately competing in the 
-          Evolution Association Canada 2025 Competition.
+          Evolution Association Canada 2026 Competition.
         </p>
       </div>
     </section>
