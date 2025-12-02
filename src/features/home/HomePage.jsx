@@ -39,7 +39,7 @@ const AboutSection = () => {
   return (
     <section className="flex flex-col md:flex-row justify-center items-center md:items-end w-auto md:w-full max-w-4xl mx-2 md:mx-auto my-12 overflow-visible">
       <Image 
-        src="/home/aboutUs.png"
+        src="/home/aboutUs.jpg"
         alt="UA Rad Team Photo"
         width={1089}
         height={812}
@@ -52,8 +52,8 @@ const AboutSection = () => {
           UA-RAD is a student led engineering club at the University of 
           Alberta dedicated to pushing the limits of FPV (First-Person View) 
           drone technology. We design, build, and fly custom high 
-          performance drones. Ultimately competing in the 
-          Evolution Association Canada 2026 Competition.
+          performance drones, with our current focus being on building a 
+          humanitarian drone system.
         </p>
       </div>
     </section>
@@ -94,8 +94,7 @@ const SpecialtiesSection = () => {
         <p className="text-left">
           <span className="font-bold">National Recognition. </span> 
           UA-RAD proudly represents the University of Alberta on a 
-          national stage, competing alongside top teams in Canada's FPV drone 
-          competition scene.
+          national stage, competing alongside top teams in Canada's FPV drone scene.
         </p>
         <Divider />
         <p className="text-left">
@@ -107,11 +106,11 @@ const SpecialtiesSection = () => {
         <p className="text-left">
           <span className="font-bold">Team-Driven Projects. </span> 
           With members from multiple faculties, we work together on creative 
-          drone solutions for challenges faced in any drone competition.
+          drone solutions for challenges faced in any drone project.
         </p>
       </div>
       <Image 
-        src="/home/manHoldingDrone.jpg"
+        src="/home/working.jpg"
         alt="Man holding a drone"
         width={1089}
         height={812}
@@ -136,11 +135,9 @@ const AircraftSection = () => {
         <div className="flex md:h-96 bg-white md:-ml-8 flex-col z-10 justify-between items-center px-10 py-10 rounded-xl border-2 border-[#247F4A]">
           <p className="text-3xl font-bold text-left text-[#007C41] mb-8 md:ml-8">COMING SOON...</p>
           <p className="md:ml-8 mb-8 md:mb-4 text-center md:text-left">
-            Our team at UA-RAD is currently working on improving 
-            our drone's performance through testing and refinement. 
-            We're building carbon fiber prototypes, trying out 
-            different propeller setups, and tuning the flight control 
-            software to make the drone as agile and responsive as possible. 
+            Our team at UA-RAD is currently focused on developing a humanitarian aid delivery drone through 
+            testing and refinement. Our goal is to create an aircraft capable of safely 
+             transporting essential supplies in conflict zones and disaster-affected regions.
           </p>
           <div className="hidden md:flex flex-row w-full justify-between items-center md:px-8 mb-8 md:mb-4">
             <InfoBox imagePath={"/home/speedIcon.png"} title={"Cruise Speed"} measurement={"TBD"} />
@@ -148,7 +145,7 @@ const AircraftSection = () => {
             <InfoBox imagePath={"/home/flightTimeIcon.png"} title={"Flight Time"} measurement={"TBD"} />
           </div>
           <p className="mb-4 font-bold text-[#247F4A]">Progress:</p>
-          <ProgressBar progress={10} />
+          <ProgressBar progress={25} />
         </div>
       </div>
     </section>
@@ -163,7 +160,6 @@ const FAQSection = () => {
       <CollapsableInfo question={"Do I need experience to join?"} answer={"No experience is required! We welcome students from all backgrounds and skill levels. Whether you're into engineering, coding, design, or just curious about drones, there's a place for you on the team."}  />
       <CollapsableInfo question={"What skills can I learn by joining UA-RAD?"} answer={"By joining UA-RAD, you can develop hands-on experience in areas like drone assembly, soldering, 3D printing, flight tuning, and FPV piloting. You'll also gain teamwork, problem-solving, and project management skills by working on real builds with other students."}  />
       <CollapsableInfo question={"What kind of drones do you build?"} answer={"We focus on FPV (First Person View) specialized drones designed for agility and performance. Our builds typically include carbon fiber frames, flight controllers, and video transmission systems for immersive piloting."}  />
-      <CollapsableInfo question={"What competitions do you attend?"} answer={"We compete in the Aerial Evolution Association of Canada's National Student UAS Competition, where we design and build unmanned aerial systems for real-world scenarios. This competition challenges us to create innovative solutions for practical applications like wildfire response automation."}  />
     </section>
   );
 }
