@@ -203,7 +203,7 @@ const ContactInfoSection = () => {
 
       <div className="hidden md:flex relative z-20 flex-shrink-0 md:flex-1">
         <Image
-          src="/home/guneetThumbsUp.png"
+          src="/teampage/memberphotos/contactteamphoto.png"
           alt="Mr. President giving a thumbs up"
           fill
           className="object-cover rounded-xl border-2 border-[#247F4A]"
