@@ -156,17 +156,38 @@ const SponsorsPage = () => {
               </div> */}
 
             <div className="mb-12">
-                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 rounded-xl flex justify-center items-center mx-auto">
+                <div className="bg-white border-[#247F4A] border-2 py-12 px-10 gap-20 rounded-xl flex justify-center items-center mx-auto">
+                <div className="text-center ">
+                    <img
+                      src="/branding/Suncor_idgoNCUqDq_1.png"
+                      alt="Company Logo"
+                      className="w-40 h-40 mx-auto mb-2 object-contain"
+                    />
+                    <h4 className="font-semibold mb-3 text-lg">Suncor</h4>
+                  </div>
+                  <div className="text-center">
+                    
+                    <img
+                      src="/branding/cuav.png"
+                      alt="Company Logo"
+                      className="w-40 h-40 mx-auto mb-2 object-contain"
+                    />
+                    <h4 className="font-semibold mb-3 text-lg">CUAV</h4>
+                  </div>
+
+
+                 
                   <div className="text-center">
                     <img
-                      src="/branding/UARAD_LOGO_DARK.png"
+                      src="/branding/ieee_mb_blue.png"
                       alt="Company Logo"
-                      className="w-32 h-32 mx-auto mb-4 object-contain"
+                      className="w-40 h-40 mx-auto mb-2 object-contain"
                     />
-                    <h4 className="font-semibold mb-3 text-lg">Your Brand Here!</h4>
+                    <h4 className="font-semibold mb-3 text-lg">IEEE</h4>
                   </div>
                 </div>
               </div>
+              
 
               {/* Call to Action */}
               <div className="text-center mt-12 pt-8">
@@ -181,7 +202,7 @@ const SponsorsPage = () => {
                     and professionals alike. We welcome both in-kind contributions and
                     financial support, with custom partnerships available.
                   </p>
-                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                     <a
                       href={`mailto:uarad.uofa@gmail.com?subject=${encodeURIComponent(
                         "Sponsorship Inquiry - UA-RAD"
@@ -200,13 +221,13 @@ Sponsorship Interest (monetary, equipment, mentorship, etc.):
 Best regards,
 [Your Name]`
                       )}`}
-                      className="inline-block w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20"
+                      className="inline-block w-full sm:w-52 bg-[#247F4A] text-white px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 text-center"
                     >
                       Support Us Today
                     </a>
                     <a
                       href="/contact"
-                      className="inline-block bg-white w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/205"
+                      className="inline-block bg-white w-full sm:w-52 text-[#247F4A] border-2 border-[#247F4A] px-8 py-3 rounded-xl font-semibold cursor-pointer transition-all duration-300 ease-in-out hover:bg-[#D3AF37] hover:border-[#D3AF37] hover:text-white hover:scale-105 hover:shadow-lg hover:shadow-white/20 text-center"
                     >
                       Contact Us
                     </a>
