@@ -67,12 +67,11 @@ const MissionSection = () => {
         <div className="md:flex-1 flex flex-col mb-8 md:mb-0 bg-white">
           <p className="mb-8 md:mb-6 text-left font-light text-[#007C41] text-4xl">OUR MISSION</p>
           <p className="md:mr-4 bg-white z-10">
-            At UA-RAD, we bring together students who are passionate about drones, 
-            technology, and innovation. Our goal is to design and build advanced aerial 
-            systems while giving members the chance to learn new skills, work as 
-            a team, and take on real challenges. Whether we're testing new ideas 
-            or preparing for competitions, we're all about learning by doing and 
-            pushing what's possible with drones.
+            At UA-RAD, we bring together students who are passionate about using drone technology to solve 
+            real humanitarian challenges. Our goal is to design and build an aid-delivery aircraft capable 
+            of operating in areas of need, giving members hands-on experience 
+            with engineering requirements, safety constraints, and mission-critical design. Our team is 
+            focused on creating a reliable platform for delivering essential supplies where they're needed most.
           </p>
         </div>
         <Image 
@@ -92,9 +91,10 @@ const SpecialtiesSection = () => {
     <section className="flex flex-row justify-center items-start w-full max-w-4xl mx-auto my-12 overflow-visible">
       <div className="relative flex-1 min-w-0 z-10 mx-2 md:mx-0 md:-mr-16 bg-white rounded-xl border-2 border-[#247F4A] py-12 px-10 md:pr-24">
         <p className="text-left">
-          <span className="font-bold">National Recognition. </span> 
-          UA-RAD proudly represents the University of Alberta on a 
-          national stage, competing alongside top teams in Canada's FPV drone scene.
+          <span className="font-bold">Humanitarian Impact. </span> 
+          UA-RAD is committed to advancing drone technology for real-world relief efforts, 
+          developing systems capable of delivering essential supplies in conflict zones 
+          and disaster-affected regions.
         </p>
         <Divider />
         <p className="text-left">
@@ -137,7 +137,7 @@ const AircraftSection = () => {
           <p className="md:ml-8 mb-8 md:mb-4 text-center md:text-left">
             Our team at UA-RAD is currently focused on developing a humanitarian aid delivery drone through 
             testing and refinement. Our goal is to create an aircraft capable of safely 
-             transporting essential supplies in conflict zones and disaster-affected regions.
+             transporting essential humanitarian supplies to areas in need.
           </p>
           <div className="hidden md:flex flex-row w-full justify-between items-center md:px-8 mb-8 md:mb-4">
             <InfoBox imagePath={"/home/speedIcon.png"} title={"Cruise Speed"} measurement={"TBD"} />
