@@ -24,8 +24,8 @@ const TeamPage = () => {
     }, []);
 
           return (
-            <div className="relative min-h-screen w-full overflow-hidden bg-white max-w-5xl mx-auto">
-              <div id="particles-js" className="absolute inset-0 z-0"></div>
+            <div className="relative min-h-screen w-full overflow-hidden bg-white mx-auto">
+              <div id="particles-js" className="absolute inset-0 z-0 "></div>
           
               <div className="flex justify-center items-center pt-20 pb-10 relative z-10 md:pt-30">
                 {/* rounded corners + overflow-hidden here */}
@@ -37,14 +37,16 @@ const TeamPage = () => {
                   />
                 </div>
               </div>
-              <div className="flex justify-center items-center mt-10 relative z-10 md:mx-8">
-                <div className="bg-white border-2 md:border-2 border-[#247F4A] flex flex-col justify-center items-center rounded-2xl py-8">
-                    <p className="mt-6 mb-8 text-center md:text-left font-light text-[#007C41] text-4xl mx-auto">MEET THE TEAM</p>
+              <div className="flex justify-center items-center mt-10 relative z-10">
+                <div className="w-full max-w-5xl mx-4 md:mx-8">
+                  <div className="bg-white border-2 border-[#247F4A] flex flex-col justify-center items-center rounded-2xl py-8">
+                    <p className="mt-6 mb-8 text-center font-light text-[#007C41] text-4xl">MEET THE TEAM</p>
                     <div className="text-center text-base md:text-xl mx-4 md:mx-8 mb-5">
-                        A multidisciplinary team of innovators merging mechanical, electrical, and software expertise to pioneer the future of FPV drones platforms at the University of Alberta.                    
+                      A multidisciplinary team of innovators merging mechanical, electrical, and software expertise to pioneer the future of FPV drones platforms at the University of Alberta.
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         
   
             <div className="flex flex-col pt-10 justify-center items-center mb-14">
